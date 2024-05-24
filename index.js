@@ -7,7 +7,7 @@ const chokidar = require("chokidar");
 const simpleGit = require("simple-git");
 const git = simpleGit();
 const PORT = 3000;
-
+let isGitOperationInProgress = false;
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/dipto.html");
 });
