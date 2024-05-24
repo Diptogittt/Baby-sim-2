@@ -633,7 +633,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-const watcher = chokidar.watch('.', {
+const watcher = chokidar.watch(".", {
   ignored: /node_modules|\.git/,
   persistent: true,
 });
@@ -643,28 +643,25 @@ const onChange = async (path) => {
   console.log(`File ${path} has been changed`);
 
   if (isGitOperationInProgress) {
-    console.log('Git operation already in progress, skipping...');
+    console.log("Git operation already in progress, skipping...");
     return;
   }
 
   isGitOperationInProgress = true;
 
   try {
-    await git.add('.');
-    await git.commit('Auto-commit');
+    await git.add(".");
+    await git.commit("Auto-commit");
     await git.push();
-    console.log('Changes pushed to GitHub');
+    console.log("Changes pushed to GitHub");
   } catch (error) {
-    console.error('Error during Git operations', error);
+    console.error("Error during Git operations", error);
   } finally {
     isGitOperationInProgress = false;
   }
 };
 
 // Add event listeners.
-watcher
-  .on('change', onChange)
-  .on('add', onChange)
-  .on('unlink', onChange);
+watcher.on("change", onChange).on("add", onChange).on("unlink", onChange);
 
-console.log('Watching for file changes...');
+console.log("Watching for file changes...");
