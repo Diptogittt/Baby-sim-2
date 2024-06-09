@@ -414,7 +414,33 @@ function readReacts() {
 function writeReacts(reacts) {
   fs.writeFileSync(reactFilePath, JSON.stringify(reacts, null, 4));
 }
+function removeTextFromReplies(replies, textToRemove) {
+  const updatedReplies = {};
 
+  for (const key in replies) {
+    if (key !== textToRemove) {
+      const updatedResponses = replies[key].filter(
+        (response) => response !== textToRemove
+      );
+      if (updatedResponses.length > 0) {
+        updatedReplies[key] = updatedResponses;
+      }
+    }
+  }
+
+  for (const key in updatedReplies) {
+    if (Array.isArray(updatedReplies[key])) {
+      updatedReplies[key] = updatedReplies[key].map((item) => {
+        if (typeof item === "object") {
+          return removeTextFromReplies(item, textToRemove);
+        }
+        return item;
+      }).filter(Boolean);
+    }
+  }
+
+  return updatedReplies;
+}
 app.get("/dipto", async (req, res) => {
   const text = req.query.text;
   const editText = req.query.edit;
@@ -492,7 +518,7 @@ app.get("/dipto", async (req, res) => {
     return res.json({ success: true, message: "Removed all replies." });
   }
 
-  if (textToRemove && !indexToRemove) {
+ /* if (textToRemove && !indexToRemove) {
     if (replies[textToRemove]) {
       delete replies[textToRemove];
       writeReplies(replies, language);
@@ -505,8 +531,16 @@ app.get("/dipto", async (req, res) => {
         .status(404)
         .json({ error: "No reply found for the given text." });
     }
-  }
-
+  }*/
+if (textToRemove && !indexToRemove) {
+    const updatedReplies = removeTextFromReplies(replies, textToRemove);
+    writeReplies(updatedReplies, language);
+    return res.json({
+      success: true,
+      message: `Removed '${textToRemove}' from all replies and keys.`,
+    });
+}
+  /////
   if (textToRemove && indexToRemove && !isNaN(parseInt(indexToRemove))) {
     indexToRemove = parseInt(indexToRemove) - 1;
     if (replies[textToRemove]) {
@@ -633,7 +667,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-const watcher = chokidar.watch(".", {
+const watcher = chokidar.watch('.', {
   ignored: /node_modules|\.git/,
   persistent: true,
 });
@@ -643,25 +677,28 @@ const onChange = async (path) => {
   console.log(`File ${path} has been changed`);
 
   if (isGitOperationInProgress) {
-    console.log("Git operation already in progress, skipping...");
+    console.log('Git operation already in progress, skipping...');
     return;
   }
 
   isGitOperationInProgress = true;
 
   try {
-    await git.add(".");
-    await git.commit("Auto-commit");
+    await git.add('.');
+    await git.commit('Auto-commit');
     await git.push();
-    console.log("Changes pushed to GitHub");
+    console.log('Changes pushed to GitHub');
   } catch (error) {
-    console.error("Error during Git operations", error);
+    console.error('Error during Git operations', error);
   } finally {
     isGitOperationInProgress = false;
   }
 };
 
 // Add event listeners.
-watcher.on("change", onChange).on("add", onChange).on("unlink", onChange);
+watcher
+  .on('change', onChange)
+  .on('add', onChange)
+  .on('unlink', onChange);
 
-console.log("Watching for file changes...");
+console.log('Watching for the next file changes...');
