@@ -20761,5 +20761,10 @@
         " hum mittha boilo na",
         " chup jani ami",
         " mittha boilo na ok"
+    ],
+    "!help": [
+        "ki help",
+        " ki help lagbe",
+        " bolo ki help lagbe"
     ]
 }
