@@ -18,6 +18,8 @@ const newReplyFilePath = __dirname + "/simsimi.json";
 const defaultReplyFilePath = __dirname + "/reply.json";
 const replyDirectoryPath = __dirname + "/replies/";
 const senderFilePath = __dirname + "/sender.json";
+const teacher = __dirname + "/teacher.json";
+const badwords = __dirname + "/badwords.json";
 if (!fs.existsSync(replyDirectoryPath)) {
   fs.mkdirSync(replyDirectoryPath);
 }
@@ -337,8 +339,9 @@ function getRandomElement(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
-function contains18Plus(teach, reply) {
-  const forbiddenWords = [
+function contains18Plus(teach = '', reply = '', action = '', words = '') {
+  if (!fs.existsSync(badwords)) {
+        fs.writeFileSync(badwords, JSON.stringify([
     "18+",
     "hda",
     "xuda",
@@ -369,8 +372,27 @@ function contains18Plus(teach, reply) {
     "lawra",
     "pussy",
     "dick",
-    "bainchod",
-  ];
+    "bainchod"]));
+  }
+   const data = fs.readFileSync(badwords, 'utf8');
+  const forbiddenWords = JSON.parse(data);
+if (action === 'add') {
+  const wordsToAdd = words.split(',').map(word => word.trim().toLowerCase());
+  forbiddenWords.push(...wordsToAdd.filter(word => word && !forbiddenWords.includes(word)));
+  fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
+  return '✅ | BadWords added';
+} 
+
+if (action === 'remove') {
+  const wordsToRemove = words.split(',').map(word => word.trim().toLowerCase());
+  forbiddenWords = forbiddenWords.filter(word => !wordsToRemove.includes(word));
+  fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
+  return '✅ | BadWords removed';
+} 
+
+if (action === 'list') {
+  return forbiddenWords;
+}
   return forbiddenWords.some(
     (word) =>
       teach.toLowerCase().includes(word) || reply.toLowerCase().includes(word),
@@ -441,6 +463,29 @@ function removeTextFromReplies(replies, textToRemove) {
 
   return updatedReplies;
 }
+let numberData = {};
+
+function teacherName(number) {
+    try {
+        if (fs.existsSync(teacher)) {
+            const data = fs.readFileSync(teacher, 'utf8');
+            numberData = JSON.parse(data);
+        } else {
+            fs.writeFileSync(teacher, JSON.stringify({},null,4));
+        }
+
+        if (numberData[number]) {
+            numberData[number]++;
+        } else {
+            numberData[number] = 1;
+        }
+        fs.writeFileSync(teacher, JSON.stringify(numberData, null, 4));
+    } catch (err) {
+        console.error('Error in teacherName function:', err);
+    }
+
+    return numberData[number];
+}
 app.get("/dipto", async (req, res) => {
   const text = req.query.text;
   const editText = req.query.edit;
@@ -455,8 +500,43 @@ app.get("/dipto", async (req, res) => {
   const language = req.query.language;
   const font = parseInt(req.query.font || 1);
   const react = req.query.react;
-  let replies = readReplies(language);
+  const key = req.query.key;
+  const bad = req.query.badWords;
+  const bbad = req.query.rmBadWords;
+  const bbaad = req.query.listBadWords;
+  
+let replies = readReplies(language);
   let reacts = readReacts();
+  if (bad) {
+    const t = "j"
+    const y = "r"
+    const z = "add"
+    const badd = await contains18Plus(t,y,z,bad)
+    return res.status(201).json({
+      status: "success",
+      message: badd,
+})
+  }
+  if (bbad) {
+    const t = "j"
+    const y = "r"
+    const z = "remove"
+    const badd = await contains18Plus(t,y,z,bad)
+    return res.status(201).json({
+      status: "success",
+      message: badd,
+})
+  }
+  if (bbaad) {
+    const t = "j"
+    const y = "r"
+    const z = "list"
+    const badd = await contains18Plus(t,y,z,bad)
+    return res.status(201).json({
+      status: "success",
+      message: badd,
+})
+  }
   if (editText && replaceText) {
     if (replies[editText]) {
       replies[replaceText] = replies[editText];
@@ -473,7 +553,7 @@ app.get("/dipto", async (req, res) => {
     }
   }
 
-  if (teachText && reply && !senderID) {
+  if (teachText && reply && senderID && !key) {
     if (contains18Plus(teachText, reply)) {
       return res.json({ message: "Teaching 18+ content is not allowed ❌." });
     }
@@ -482,11 +562,15 @@ app.get("/dipto", async (req, res) => {
     }
     replies[teachText].push(...reply.split(","));
     writeReplies(replies, language);
+  const tt = await teacherName(senderID)
     return res.json({
       success: true,
       message: `Replies "${reply}" added to "${teachText}".`,
+      teacher:`${senderID}`,
+      teachs:`${tt}`
     });
-  } else if (teachText && senderID && reply) {
+  } 
+else if (teachText && senderID && reply && key) {
     addSenderID(senderID, reply);
     return res.json({
       success: true,
@@ -666,7 +750,6 @@ if (textToRemove && !indexToRemove) {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
 const watcher = chokidar.watch('.', {
   ignored: /node_modules|\.git/,
   persistent: true,
