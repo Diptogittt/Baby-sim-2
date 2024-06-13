@@ -567,7 +567,8 @@ let replies = readReplies(language);
       success: true,
       message: `Replies "${reply}" added to "${teachText}".`,
       teacher:`${senderID}`,
-      teachs:`${tt}`
+      teachs:`${tt}`,
+ teachNumber:`${Object.keys(replies).length}`
     });
   } 
 else if (teachText && senderID && reply && key) {
@@ -587,10 +588,14 @@ else if (teachText && senderID && reply && key) {
       message: `Reaction "${react}" added to "${teachText}".`,
     });
   }
-
   if (listText) {
     if (listText === "all") {
-      return res.json({ length: Object.keys(replies).length, data: replies });
+const data = fs.readFileSync(teacher, 'utf8');
+  const jsonObject = JSON.parse(data);
+  const teacherList = Object.entries(jsonObject).map(([key, value]) => ({ [key]: value }));
+      return res.json({
+      teacher:{ teacherList },length: Object.keys(replies).length, data: replies });
+      
     } else if (replies[listText]) {
       return res.json({ data: replies[listText] });
     }
