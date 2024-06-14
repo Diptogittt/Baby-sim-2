@@ -569,7 +569,7 @@ app.get("/dipto", async (req, res) => {
 
   if (teachText && reply && senderID && !key) {
     if (contains18Plus(teachText, reply)) {
-      return res.json({ message: "Teaching 18+ content is not allowed ❌." });
+      return res.json({ message: "Teaching 18+ content is not allowed ❌." ,teacher: `${senderID}`,teachs: `null`});
     }
     if (!replies[teachText]) {
       replies[teachText] = [];
