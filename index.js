@@ -611,6 +611,7 @@ app.get("/dipto", async (req, res) => {
       return res.json({
         teacher: { teacherList },
         length: Object.keys(replies).length
+      })
        } else if (replies[listText]) {
       return res.json({ data: replies[listText] });
     }
