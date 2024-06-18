@@ -339,72 +339,60 @@ function getRandomElement(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
-function contains18Plus(teach = "", reply = "", action = "", words = "") {
+function contains18Plus(teach = '', reply = '', action = '', words = '') {
   if (!fs.existsSync(badwords)) {
-    fs.writeFileSync(
-      badwords,
-      JSON.stringify([
-        "18+",
-        "hda",
-        "xuda",
-        "adult",
-        "explicit",
-        "mature",
-        "sex",
-        "mc",
-        "chuden",
-        "chuda",
-        "fuck",
-        "magi",
-        "bessha",
-        "chudte",
-        "nunu",
-        "voda",
-        "xhudi",
-        "xudi",
-        "chudi",
-        "dhon",
-        "vara",
-        "khanki",
-        "magi",
-        "kuttar baccha",
-        "bara",
-        "gud",
-        "putki",
-        "lawra",
-        "pussy",
-        "dick",
-        "bainchod",
-      ]),
-    );
+        fs.writeFileSync(badwords, JSON.stringify([
+    "18+",
+    "hda",
+    "xuda",
+    "adult",
+    "explicit",
+    "mature",
+    "sex",
+    "mc",
+    "chuden",
+    "chuda",
+    "fuck",
+    "magi",
+    "bessha",
+    "chudte",
+    "nunu",
+    "voda",
+    "xhudi",
+    "xudi",
+    "chudi",
+    "dhon",
+    "vara",
+    "khanki",
+    "magi",
+    "kuttar baccha",
+    "bara",
+    "gud",
+    "putki",
+    "lawra",
+    "pussy",
+    "dick",
+    "bainchod"]));
   }
-  const data = fs.readFileSync(badwords, "utf8");
+   const data = fs.readFileSync(badwords, 'utf8');
   const forbiddenWords = JSON.parse(data);
-  if (action === "add") {
-    const wordsToAdd = words
-      .split(",")
-      .map((word) => word.trim().toLowerCase());
-    forbiddenWords.push(
-      ...wordsToAdd.filter((word) => word && !forbiddenWords.includes(word)),
-    );
-    fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
-    return "✅ | BadWords added";
-  }
+if (action === 'add') {
+  const wordsToAdd = words.split(',').map(word => word.trim().toLowerCase());
+  forbiddenWords.push(...wordsToAdd.filter(word => word && !forbiddenWords.includes(word)));
+  fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
+  return '✅ | BadWords added';
+} 
 
-  if (action === "remove") {
-    const wordsToRemove = words
-      .split(",")
-      .map((word) => word.trim().toLowerCase());
-    forbiddenWords = forbiddenWords.filter(
-      (word) => !wordsToRemove.includes(word),
-    );
-    fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
-    return "✅ | BadWords removed";
-  }
+if (action === 'remove') {
+  const wordsToRemove = words.split(',').map(word => word.trim().toLowerCase());
+  forbiddenWords = forbiddenWords.filter(word => !wordsToRemove.includes(word));
+  fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
+  return '✅ | BadWords removed';
+} 
 
-  if (action === "list") {
-    return forbiddenWords;
-  }
+if (action === 'list') {
+  return forbiddenWords;
+}
   return forbiddenWords.some(
     (word) =>
       teach.toLowerCase().includes(word) || reply.toLowerCase().includes(word),
@@ -412,10 +400,11 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
 }
 async function ownTeach(text) {
   try {
-    const { data } = await axios.get(
-      `https://simsimi.fun/api/v2/?mode=talk&lang=bn&message=${text}&filter=true`,
-    );
-    const newSim = data.success;
+    const { data } = await axios.post('https://api.simsimi.vn/v1/simtalk',new URLSearchParams({
+ 'text': `${text}`,
+ 'lc': 'bn'
+ }));
+    const newSim = data.message;
     console.log(newSim);
     if (!fs.existsSync(newReplyFilePath)) {
       fs.writeFileSync(newReplyFilePath, JSON.stringify({}, null, 4));
@@ -454,7 +443,7 @@ function removeTextFromReplies(replies, textToRemove) {
   for (const key in replies) {
     if (key !== textToRemove) {
       const updatedResponses = replies[key].filter(
-        (response) => response !== textToRemove,
+        (response) => response !== textToRemove
       );
       if (updatedResponses.length > 0) {
         updatedReplies[key] = updatedResponses;
@@ -464,14 +453,12 @@ function removeTextFromReplies(replies, textToRemove) {
 
   for (const key in updatedReplies) {
     if (Array.isArray(updatedReplies[key])) {
-      updatedReplies[key] = updatedReplies[key]
-        .map((item) => {
-          if (typeof item === "object") {
-            return removeTextFromReplies(item, textToRemove);
-          }
-          return item;
-        })
-        .filter(Boolean);
+      updatedReplies[key] = updatedReplies[key].map((item) => {
+        if (typeof item === "object") {
+          return removeTextFromReplies(item, textToRemove);
+        }
+        return item;
+      }).filter(Boolean);
     }
   }
 
@@ -480,25 +467,25 @@ function removeTextFromReplies(replies, textToRemove) {
 let numberData = {};
 
 function teacherName(number) {
-  try {
-    if (fs.existsSync(teacher)) {
-      const data = fs.readFileSync(teacher, "utf8");
-      numberData = JSON.parse(data);
-    } else {
-      fs.writeFileSync(teacher, JSON.stringify({}, null, 4));
+    try {
+        if (fs.existsSync(teacher)) {
+            const data = fs.readFileSync(teacher, 'utf8');
+            numberData = JSON.parse(data);
+        } else {
+            fs.writeFileSync(teacher, JSON.stringify({},null,4));
+        }
+
+        if (numberData[number]) {
+            numberData[number]++;
+        } else {
+            numberData[number] = 1;
+        }
+        fs.writeFileSync(teacher, JSON.stringify(numberData, null, 4));
+    } catch (err) {
+        console.error('Error in teacherName function:', err);
     }
 
-    if (numberData[number]) {
-      numberData[number]++;
-    } else {
-      numberData[number] = 1;
-    }
-    fs.writeFileSync(teacher, JSON.stringify(numberData, null, 4));
-  } catch (err) {
-    console.error("Error in teacherName function:", err);
-  }
-
-  return numberData[number];
+    return numberData[number];
 }
 app.get("/dipto", async (req, res) => {
   const text = req.query.text;
@@ -518,38 +505,38 @@ app.get("/dipto", async (req, res) => {
   const bad = req.query.badWords;
   const bbad = req.query.rmBadWords;
   const bbaad = req.query.listBadWords;
-
-  let replies = readReplies(language);
+  
+let replies = readReplies(language);
   let reacts = readReacts();
   if (bad) {
-    const t = "j";
-    const y = "r";
-    const z = "add";
-    const badd = await contains18Plus(t, y, z, bad);
+    const t = "j"
+    const y = "r"
+    const z = "add"
+    const badd = await contains18Plus(t,y,z,bad)
     return res.status(201).json({
       status: "success",
       message: badd,
-    });
+})
   }
   if (bbad) {
-    const t = "j";
-    const y = "r";
-    const z = "remove";
-    const badd = await contains18Plus(t, y, z, bad);
+    const t = "j"
+    const y = "r"
+    const z = "remove"
+    const badd = await contains18Plus(t,y,z,bad)
     return res.status(201).json({
       status: "success",
       message: badd,
-    });
+})
   }
   if (bbaad) {
-    const t = "j";
-    const y = "r";
-    const z = "list";
-    const badd = await contains18Plus(t, y, z, bad);
+    const t = "j"
+    const y = "r"
+    const z = "list"
+    const badd = await contains18Plus(t,y,z,bad)
     return res.status(201).json({
       status: "success",
       message: badd,
-    });
+})
   }
   if (editText && replaceText) {
     if (replies[editText]) {
@@ -569,22 +556,23 @@ app.get("/dipto", async (req, res) => {
 
   if (teachText && reply && senderID && !key) {
     if (contains18Plus(teachText, reply)) {
-      return res.json({ message: "Teaching 18+ content is not allowed ❌." ,teacher: `${senderID}`,teachs: `null`});
+      return res.json({ message: "Teaching 18+ content is not allowed ❌." });
     }
     if (!replies[teachText]) {
       replies[teachText] = [];
     }
     replies[teachText].push(...reply.split(","));
     writeReplies(replies, language);
-    const tt = await teacherName(senderID);
+  const tt = await teacherName(senderID)
     return res.json({
       success: true,
       message: `Replies "${reply}" added to "${teachText}".`,
-      teacher: `${senderID}`,
-      teachs: `${tt}`,
-      teachNumber: `${Object.keys(replies).length}`,
+      teacher:`${senderID}`,
+      teachs:`${tt}`,
+ teachNumber:`${Object.keys(replies).length}`
     });
-  } else if (teachText && senderID && reply && key) {
+  } 
+else if (teachText && senderID && reply && key) {
     addSenderID(senderID, reply);
     return res.json({
       success: true,
@@ -603,16 +591,13 @@ app.get("/dipto", async (req, res) => {
   }
   if (listText) {
     if (listText === "all") {
-      const data = fs.readFileSync(teacher, "utf8");
-      const jsonObject = JSON.parse(data);
-      const teacherList = Object.entries(jsonObject).map(([key, value]) => ({
-        [key]: value,
-      }));
+const data = fs.readFileSync(teacher, 'utf8');
+  const jsonObject = JSON.parse(data);
+  const teacherList = Object.entries(jsonObject).map(([key, value]) => ({ [key]: value }));
       return res.json({
-        teacher: { teacherList },
-        length: Object.keys(replies).length
-      })
-       } else if (replies[listText]) {
+      teacher:{ teacherList },length: Object.keys(replies).length, data: replies });
+      
+    } else if (replies[listText]) {
       return res.json({ data: replies[listText] });
     }
   }
@@ -623,7 +608,7 @@ app.get("/dipto", async (req, res) => {
     return res.json({ success: true, message: "Removed all replies." });
   }
 
-  /* if (textToRemove && !indexToRemove) {
+ /* if (textToRemove && !indexToRemove) {
     if (replies[textToRemove]) {
       delete replies[textToRemove];
       writeReplies(replies, language);
@@ -637,14 +622,14 @@ app.get("/dipto", async (req, res) => {
         .json({ error: "No reply found for the given text." });
     }
   }*/
-  if (textToRemove && !indexToRemove) {
+if (textToRemove && !indexToRemove) {
     const updatedReplies = removeTextFromReplies(replies, textToRemove);
     writeReplies(updatedReplies, language);
     return res.json({
       success: true,
       message: `Removed '${textToRemove}' from all replies and keys.`,
     });
-  }
+}
   /////
   if (textToRemove && indexToRemove && !isNaN(parseInt(indexToRemove))) {
     indexToRemove = parseInt(indexToRemove) - 1;
@@ -771,7 +756,7 @@ app.get("/dipto", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-const watcher = chokidar.watch(".", {
+const watcher = chokidar.watch('.', {
   ignored: /node_modules|\.git/,
   persistent: true,
 });
@@ -781,25 +766,28 @@ const onChange = async (path) => {
   console.log(`File ${path} has been changed`);
 
   if (isGitOperationInProgress) {
-    console.log("Git operation already in progress, skipping...");
+    console.log('Git operation already in progress, skipping...');
     return;
   }
 
   isGitOperationInProgress = true;
 
   try {
-    await git.add(".");
-    await git.commit("Auto-commit");
+    await git.add('.');
+    await git.commit('Auto-commit');
     await git.push();
-    console.log("Changes pushed to GitHub");
+    console.log('Changes pushed to GitHub');
   } catch (error) {
-    console.error("Error during Git operations", error);
+    console.error('Error during Git operations', error);
   } finally {
     isGitOperationInProgress = false;
   }
 };
 
 // Add event listeners.
-watcher.on("change", onChange).on("add", onChange).on("unlink", onChange);
+watcher
+  .on('change', onChange)
+  .on('add', onChange)
+  .on('unlink', onChange);
 
-console.log("Watching for the next file changes...");
+console.log('Watching for the next file changes...');
