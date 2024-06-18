@@ -4863,5 +4863,8 @@
     ".r'){encodeuricomponent(reply)}": [
         "Ok amu ne\n",
         "Ok amu ne\n"
+    ],
+    "😗'){encodeuricomponent(reply)}": [
+        "oi reply dau na k"
     ]
 }
