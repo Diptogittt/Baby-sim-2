@@ -20,6 +20,7 @@ const replyDirectoryPath = __dirname + "/replies/";
 const senderFilePath = __dirname + "/sender.json";
 const teacher = __dirname + "/teacher.json";
 const badwords = __dirname + "/badwords.json";
+const nonTeach = __dirname + "/nonTeach.json"
 if (!fs.existsSync(replyDirectoryPath)) {
   fs.mkdirSync(replyDirectoryPath);
 }
@@ -505,7 +506,7 @@ app.get("/dipto", async (req, res) => {
   const bad = req.query.badWords;
   const bbad = req.query.rmBadWords;
   const bbaad = req.query.listBadWords;
-  
+  const find = req.query.find;
 let replies = readReplies(language);
   let reacts = readReacts();
   if (bad) {
@@ -600,6 +601,8 @@ const data = fs.readFileSync(teacher, 'utf8');
       
     } else if (replies[listText]) {
       return res.json({ data: replies[listText] });
+    } else {
+      return res.json({ data: "not found maybe self teached" });
     }
   }
 
@@ -746,17 +749,44 @@ if (textToRemove && !indexToRemove) {
       }
     } catch (error) {
       console.log(error);
+      let nonTeached = {};
+      try {
+        const existingData = fs.readFileSync(nonTeach, 'utf8');
+        nonTeached = JSON.parse(existingData);
+      } catch (readError) {
+        res.send('Error reading nonTeach file:', readError);
+      }
+
+      nonTeached[text] = null;
+      fs.writeFileSync(nonTeach, JSON.stringify(nonTeached, null, 4));
+
       return res.json({
         reply: "𝗦𝗼𝗿𝗿𝘆 𝗕𝗮𝗯𝘆 𝗮𝗺𝗮𝗸𝗲 𝗮𝘁𝗮 𝗧𝗲𝗮𝗰𝗵 𝗸𝗼𝗿𝗮 𝗵𝗼𝗶 𝗻𝗶 <🥺",
       });
     }
   }
+  if (find) {
+    const result = {};
+    for (const [replyKey, values] of Object.entries(replies)) {
+      if (
+        replyKey.split(/\s+/).includes(find) || values.some(value => value.split(/\s+/).includes(find)) 
+      ) {
+        result[replyKey] = values;
+      }
+    }
+    if (Object.keys(result).length === 0) {
+      return res.json({ message: "Not found message , It's self teached", author: "亗ㅤƊᎥᎮㅤƬᴏㅤ亗" });
+    }
+    return res.json({result, author:"亗ㅤƊᎥᎮㅤƬᴏㅤ亗"});
+  }
+  
   return res.status(400).json({ error: "Invalid request parameters." });
 });
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
 const watcher = chokidar.watch('.', {
   ignored: /node_modules|\.git/,
   persistent: true,
