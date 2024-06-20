@@ -5853,5 +5853,8 @@
     ],
     "!babe'){encodeuricomponent(reply)}": [
         "oi reply dau na k"
+    ],
+    "!baby hmm'){encodeuricomponent(reply)}": [
+        "hmm.topic change koro"
     ]
 }
