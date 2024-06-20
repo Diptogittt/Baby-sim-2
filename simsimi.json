@@ -5711,5 +5711,8 @@
     ],
     "/trans en": [
         "ei din tor bow chuda nibe tor shate"
+    ],
+    "this command does not require a prefix to start with.pleace without prefix use this command": [
+        "parag use to tell this"
     ]
 }
