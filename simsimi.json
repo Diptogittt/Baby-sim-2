@@ -5679,6 +5679,7 @@
         "samne diya na pison diya?"
     ],
     "${message}`,options": [
+        "${part[1]}",
         "${part[1]}"
     ]
 }
