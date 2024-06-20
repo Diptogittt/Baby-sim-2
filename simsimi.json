@@ -5662,5 +5662,8 @@
     ],
     "🤬'){encodeuricomponent(reply)}": [
         "oi reply dau na k"
+    ],
+    "toi etto baje ken'){encodeuricomponent(reply)}": [
+        "ta tor ki somossa?"
     ]
 }
