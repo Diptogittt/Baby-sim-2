@@ -5868,5 +5868,8 @@
     ],
     "!baby hmm 🥺'){encodeuricomponent(reply)}": [
         "hmm.topic change koro"
+    ],
+    "choose one option'){encodeuricomponent(reply)}": [
+        "take a name"
     ]
 }
