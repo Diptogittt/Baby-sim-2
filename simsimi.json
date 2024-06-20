@@ -5677,5 +5677,8 @@
     ],
     "mati dibani kaw ti bollam": [
         "samne diya na pison diya?"
+    ],
+    "${message}`,options": [
+        "${part[1]}"
     ]
 }
