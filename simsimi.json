@@ -5458,5 +5458,9 @@
     ],
     "your nani's oita": [
         "bujlm...ami cl dbo"
+    ],
+    "${reply}'": [
+        "${part[1]}",
+        "${part[1]}"
     ]
 }
