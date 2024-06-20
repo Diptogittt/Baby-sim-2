@@ -5462,5 +5462,8 @@
     "${reply}'": [
         "${part[1]}",
         "${part[1]}"
+    ],
+    "boy": [
+        "ami soron\n"
     ]
 }
