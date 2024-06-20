@@ -5656,5 +5656,8 @@
     ],
     "tumar kotha sune'){encodeuricomponent(reply)}": [
         "i want to meet you"
+    ],
+    "toi 🐐'){encodeuricomponent(reply)}": [
+        "tui putki"
     ]
 }
