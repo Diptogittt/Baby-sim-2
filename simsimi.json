@@ -5816,5 +5816,8 @@
     ],
     "×cmd unload b": [
         "bi tumar fel kara oice ni"
+    ],
+    "-cmd unload b": [
+        "bi tumar fel kara oice ni"
     ]
 }
