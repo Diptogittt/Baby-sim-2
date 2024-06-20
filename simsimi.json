@@ -5665,5 +5665,8 @@
     ],
     "toi etto baje ken'){encodeuricomponent(reply)}": [
         "ta tor ki somossa?"
+    ],
+    "toi pagol'){encodeuricomponent(reply)}": [
+        "Tor bap pagol "
     ]
 }
