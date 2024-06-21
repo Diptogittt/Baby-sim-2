@@ -5947,6 +5947,7 @@
     ],
     "usage: • *ai [prompt]": [
         "${part[1]}",
+        "${part[1]}",
         "${part[1]}"
     ],
     "dukbe nahh 🤦🏻‍♂️": [
