@@ -6217,5 +6217,8 @@
     ],
     "/eval const data = (await usersdata.get(event.senderid)).moneyout(`your current balance is ${data} coins`)": [
         "mb ses pray"
+    ],
+    "timar bujar boyes hoini": [
+        "amito r shobjanta na!"
     ]
 }
