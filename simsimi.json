@@ -6214,5 +6214,8 @@
     ],
     "jumma mobarok": [
         "maiago jutar bari khay,"
+    ],
+    "/eval const data = (await usersdata.get(event.senderid)).moneyout(`your current balance is ${data} coins`)": [
+        "mb ses pray"
     ]
 }
