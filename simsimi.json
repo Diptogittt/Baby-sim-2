@@ -5927,5 +5927,11 @@
     ],
     "rohan ar hmm amr hmm": [
         "hmm.topic change koro"
+    ],
+    "prefix is: !": [
+        "sali"
+    ],
+    "usage: • *ai [prompt]": [
+        "${part[1]}"
     ]
 }
