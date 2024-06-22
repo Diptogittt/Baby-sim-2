@@ -9447,6 +9447,7 @@
         "ok nao"
     ],
     "${encodeuricomponent(reply)}`": [
+        "${part[1]}",
         "${part[1]}"
     ],
     "tmr thote kiss dibo tai": [
