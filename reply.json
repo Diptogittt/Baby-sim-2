@@ -30748,5 +30748,13 @@
         " it lives in africa and asia",
         " yes",
         " it roars loudly"
+    ],
+    "do you know monkey": [
+        "yes",
+        " it can climb trees",
+        " yes",
+        " it loves eating fruits",
+        " yes",
+        " it's very intelligent"
     ]
 }
