@@ -30474,5 +30474,13 @@
         " it affects the tides",
         " yes",
         " it's the earth's natural satellite"
+    ],
+    "do you know water": [
+        "yes",
+        "%20it%27s%20essential%20for%20life",
+        "%20yes",
+        "%20it%20covers%2071%%20of%20the%20earth%27s%20surface",
+        "%20yes",
+        "%20it%27s%20h2o"
     ]
 }
