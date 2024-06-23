@@ -30780,5 +30780,13 @@
         " it moves slowly",
         " yes",
         " it eats insects"
+    ],
+    "do you know fish": [
+        "yes",
+        " it lives in water",
+        " yes",
+        " there are many types",
+        " yes",
+        " it has scales on its body"
     ]
 }
