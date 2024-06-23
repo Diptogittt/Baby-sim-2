@@ -30458,5 +30458,13 @@
         "khete chol!",
         " duperer khabar!",
         " ki khabo?"
+    ],
+    "do you know sun": [
+        "yes",
+        " it's a star",
+        " yes",
+        " it's the center of our solar system",
+        " yes",
+        " it provides light and heat"
     ]
 }
