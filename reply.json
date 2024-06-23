@@ -31238,5 +31238,13 @@
         " it's juicy",
         " yes",
         " it contains many vitamins"
+    ],
+    "do you know banana": [
+        "yes",
+        " it's rich in potassium",
+        " yes",
+        " it's my favorite",
+        " yes",
+        " it's good for digestion"
     ]
 }
