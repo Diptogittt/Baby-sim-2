@@ -31222,5 +31222,13 @@
         " it's sweet and sour",
         " yes",
         " it's rich in vitamin c"
+    ],
+    "do you know apple": [
+        "yes",
+        " it's a sweet fruit",
+        " yes",
+        " it's eaten whole",
+        " yes",
+        " it's a good source of vitamin c"
     ]
 }
