@@ -30772,5 +30772,13 @@
         " it grows up quickly",
         " yes",
         " it loves to play"
+    ],
+    "do you know chameleon": [
+        "yes",
+        " it can change colors",
+        " yes",
+        " it moves slowly",
+        " yes",
+        " it eats insects"
     ]
 }
