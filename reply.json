@@ -30506,5 +30506,13 @@
         " it's a mountain that can explode",
         " yes",
         " it forms islands"
+    ],
+    "do you know elephant": [
+        "yes",
+        " it's the largest land animal",
+        " yes",
+        " it has a trunk",
+        " yes",
+        " it lives in herds"
     ]
 }
