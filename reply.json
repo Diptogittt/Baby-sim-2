@@ -30740,5 +30740,13 @@
         " it's a powerful hunter",
         " yes",
         " it lives in jungles"
+    ],
+    "do you know lion": [
+        "yes",
+        " it's known as the king of the jungle",
+        " yes",
+        " it lives in africa and asia",
+        " yes",
+        " it roars loudly"
     ]
 }
