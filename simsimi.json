@@ -10507,5 +10507,8 @@
     "*ytb -v guts theme": [
         "ami chod kheye gelam",
         "ami chod kheye gelam"
+    ],
+    ".bot off": [
+        "Ami bot na Tor nani"
     ]
 }
