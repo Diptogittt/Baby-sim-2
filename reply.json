@@ -30498,5 +30498,13 @@
         " it's important for pollination",
         " yes",
         " it lives in colonies"
+    ],
+    "do you know volcano": [
+        "yes",
+        " it erupts molten rock",
+        " yes",
+        " it's a mountain that can explode",
+        " yes",
+        " it forms islands"
     ]
 }
