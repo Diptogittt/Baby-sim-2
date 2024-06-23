@@ -31289,5 +31289,14 @@
         " it's often eaten fresh",
         " yes",
         " it's high in fiber"
+    ],
+    "do you know cherry": [
+        "yes",
+        " it's a small",
+        " round fruit",
+        " yes",
+        " it's often used in desserts",
+        " yes",
+        " it comes in different colors"
     ]
 }
