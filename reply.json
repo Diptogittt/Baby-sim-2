@@ -31306,5 +31306,13 @@
         " it's high in healthy fats",
         " yes",
         " it's used in salads and dips"
+    ],
+    "do you know grapefruit": [
+        "yes",
+        " it's a large citrus fruit",
+        " yes",
+        " it's tangy and slightly bitter",
+        " yes",
+        " it's rich in vitamins and antioxidants"
     ]
 }
