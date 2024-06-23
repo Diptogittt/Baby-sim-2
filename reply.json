@@ -30466,5 +30466,13 @@
         " it's the center of our solar system",
         " yes",
         " it provides light and heat"
+    ],
+    "do you know moon": [
+        "yes",
+        " it orbits the earth",
+        " yes",
+        " it affects the tides",
+        " yes",
+        " it's the earth's natural satellite"
     ]
 }
