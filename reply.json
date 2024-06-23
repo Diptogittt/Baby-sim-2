@@ -31273,5 +31273,13 @@
         " it's high in vitamin c",
         " yes",
         " it has edible seeds"
+    ],
+    "do you know papaya": [
+        "yes",
+        " it's a tropical fruit",
+        " yes",
+        " it's sweet and juicy",
+        " yes",
+        " it's rich in enzymes"
     ]
 }
