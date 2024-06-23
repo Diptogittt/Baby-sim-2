@@ -30490,5 +30490,13 @@
         " it absorbs co2",
         " yes",
         " it supports wildlife"
+    ],
+    "do you know honeybee": [
+        "yes",
+        " it makes honey",
+        " yes",
+        " it's important for pollination",
+        " yes",
+        " it lives in colonies"
     ]
 }
