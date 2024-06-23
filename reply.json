@@ -31320,5 +31320,14 @@
         " it's tangy and slightly bitter",
         " yes",
         " it's rich in vitamins and antioxidants"
+    ],
+    "do you know plum": [
+        "yes",
+        " it's a small",
+        " juicy fruit",
+        " yes",
+        " it's sweet and tart",
+        " yes",
+        " it's high in antioxidants"
     ]
 }
