@@ -30812,5 +30812,13 @@
         " it's very loyal",
         " yes",
         " there are many breeds"
+    ],
+    "do you know cat": [
+        "yes",
+        " it's a common pet",
+        " yes",
+        " it loves to purr",
+        " yes",
+        " it's very playful"
     ]
 }
