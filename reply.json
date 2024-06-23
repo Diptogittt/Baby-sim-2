@@ -30523,5 +30523,13 @@
         " yes",
         " it beats about 100",
         "000 times a day"
+    ],
+    "do you know rainbow": [
+        "yes",
+        " it's caused by light refraction",
+        " yes",
+        " it shows 7 colors",
+        " yes",
+        " it appears after rain"
     ]
 }
