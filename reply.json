@@ -30756,5 +30756,13 @@
         " it loves eating fruits",
         " yes",
         " it's very intelligent"
+    ],
+    "do you know rooster": [
+        "yes",
+        " it crows in the morning",
+        " yes",
+        " it has bright feathers",
+        " yes",
+        " it is found on farms"
     ]
 }
