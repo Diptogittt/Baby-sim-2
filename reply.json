@@ -30482,5 +30482,13 @@
         "%20it%20covers%2071%%20of%20the%20earth%27s%20surface",
         "%20yes",
         "%20it%27s%20h2o"
+    ],
+    "do you know tree": [
+        "yes",
+        " it provides oxygen",
+        " yes",
+        " it absorbs co2",
+        " yes",
+        " it supports wildlife"
     ]
 }
