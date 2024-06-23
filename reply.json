@@ -30796,5 +30796,13 @@
         " it's a strong animal",
         " yes",
         " it works with humans"
+    ],
+    "do you know bear": [
+        "yes",
+        " it's a large mammal",
+        " yes",
+        " it can be very strong",
+        " yes",
+        " it hibernates in winter"
     ]
 }
