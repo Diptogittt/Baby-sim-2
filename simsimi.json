@@ -10786,5 +10786,8 @@
     ],
     "🤦🤦'){encodeuricomponent(reply)}": [
         "oi reply dau na k"
+    ],
+    "ㅕㅁ도듀'){encodeuricomponent(reply)}": [
+        "oi reply dau na k"
     ]
 }
