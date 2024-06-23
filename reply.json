@@ -30547,5 +30547,13 @@
         " it's quiet for reading",
         " yes",
         " it has many resources"
+    ],
+    "do you know computer": [
+        "yes",
+        " it processes information",
+        " yes",
+        " it runs software",
+        " yes",
+        " it connects to the internet"
     ]
 }
