@@ -30539,5 +30539,13 @@
         " it's discovered by newton",
         " yes",
         " it keeps us grounded"
+    ],
+    "do you know library": [
+        "yes",
+        " it's a place for books",
+        " yes",
+        " it's quiet for reading",
+        " yes",
+        " it has many resources"
     ]
 }
