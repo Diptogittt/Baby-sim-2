@@ -30514,5 +30514,14 @@
         " it has a trunk",
         " yes",
         " it lives in herds"
+    ],
+    "do you know heart": [
+        "yes",
+        " it pumps blood",
+        " yes",
+        " it's a vital organ",
+        " yes",
+        " it beats about 100",
+        "000 times a day"
     ]
 }
