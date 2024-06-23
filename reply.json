@@ -30764,5 +30764,13 @@
         " it has bright feathers",
         " yes",
         " it is found on farms"
+    ],
+    "do you know tiger cub": [
+        "yes",
+        " it's very cute",
+        " yes",
+        " it grows up quickly",
+        " yes",
+        " it loves to play"
     ]
 }
