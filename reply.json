@@ -30531,5 +30531,13 @@
         " it shows 7 colors",
         " yes",
         " it appears after rain"
+    ],
+    "do you know gravity": [
+        "yes",
+        " it pulls objects toward earth",
+        " yes",
+        " it's discovered by newton",
+        " yes",
+        " it keeps us grounded"
     ]
 }
