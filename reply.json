@@ -31230,5 +31230,13 @@
         " it's eaten whole",
         " yes",
         " it's a good source of vitamin c"
+    ],
+    "do you know pineapple": [
+        "yes",
+        " it's sweet and sour",
+        " yes",
+        " it's juicy",
+        " yes",
+        " it contains many vitamins"
     ]
 }
