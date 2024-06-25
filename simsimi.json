@@ -13256,5 +13256,8 @@
     "@জাতির ব্লুবেরি আপা ka": [
         "re",
         "re"
+    ],
+    "${encodeuricomponent(dipto)}`": [
+        "Vokchod"
     ]
 }
