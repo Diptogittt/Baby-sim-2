@@ -13332,5 +13332,12 @@
     ],
     "dur ektu kharap hoy kichu hobe  na": [
         "okay.."
+    ],
+    "${encodeuricomponent(message)}`": [
+        "${part[1]}",
+        "${part[1]}"
+    ],
+    "madi ay prem korbi amar sate 😒😤": [
+        "ammu boka dibe"
     ]
 }
