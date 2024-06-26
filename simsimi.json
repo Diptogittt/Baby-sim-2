@@ -13785,5 +13785,8 @@
     ],
     "!bby tumi amr friend ami dite pari'){encodeuricomponent(reply)}": [
         "ami tmr ki tahole?\n"
+    ],
+    "!bby tumi amr friend'){encodeuricomponent(reply)}": [
+        "ami tmr ki tahole?\n"
     ]
 }
