@@ -13788,5 +13788,8 @@
     ],
     "!bby tumi amr friend'){encodeuricomponent(reply)}": [
         "ami tmr ki tahole?\n"
+    ],
+    "!bby friend'){encodeuricomponent(reply)}": [
+        "hey jan"
     ]
 }
