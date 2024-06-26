@@ -2137,5 +2137,6 @@
     " cmd install 👽👽.js module.exports.config = { name: \"baby\", version: \"2.8\", category: \"ai\", role: 0}module.exports.onStart = async ({}) => {}module.exports.onReply = async ({ api, event, args }) => { const axios = require('axios'); const sim = args.join(\" \"); const mostakim = event.body.toLowerCase(); if (mostakim.includes(\"bby\") || mostakim.includes(baby)) { try { const response = await axios.get(`https://nobs-api.onrender.com/dipto/baby?text=${encodeURIComponent(sim)}`); const reply = response.data const mos = reply.data await api.sendMessage(mos, event.threadID, event.messageID); } catch (error) { await api.sendMessage(\"তুমি code ভুল দেকছো🫥\", event.threadID, event.messageID); } }}  }l": null,
     "তুমি কি আমায় সত্যিই চিনো": null,
     "তুমি আমার আইডিতে আসলে কিভাবে": null,
-    "তোমার কি বিয়ে হয়েছে": null
+    "তোমার কি বিয়ে হয়েছে": null,
+    "MD bumped your message": null
 }
