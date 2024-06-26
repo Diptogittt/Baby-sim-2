@@ -14074,5 +14074,8 @@
     "dao'){encodeuricomponent(reply)}": [
         "hmm ami dei.. bissas hoi na?",
         "hmm ami dei.. bissas hoi na?"
+    ],
+    "amer'){encodeuricomponent(reply)}": [
+        "Sunny"
     ]
 }
