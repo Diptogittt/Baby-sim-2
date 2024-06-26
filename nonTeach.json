@@ -2126,5 +2126,6 @@
     "🇧🇩🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷🇦🇷": null,
     " CMD install bby5.js const axios = require(\"axios\");module.exports.config = { name: \"bby1\", version: \"1.0.0\", role: 0,  author: \"dipto\",  description: \"better then all Sim simi with multiple conversation\", usePrefix: true, guide: \"[message]\", category: \"simsimi\", coolDowns: 5,};module.exports.onStart = async function ({ }) { }module.exports.onChat = async function ({ api, args, event }) { if (dipto.includes(\"bby\")||dipto.includes(\"baby\")) { try {  if (dipto) { const response = await axios.get(`https://nobs-api.onrender.com/dipto/baby?text=${dipto}`); const mg = response.data.reply; await api.sendMessage({body: mg ,},event.threadID,(error, info) => { global.GoatBot.onChat.set(info.messageID,{ commandName: this.config.name, type: 'chat', messageID: info.messageID, author: event.senderID, link: mg })},event.messageID); } } catch (error) {console.error(`Failed to get an answer: ${error.message}`);api.sendMessage(`${error.message}.\\nAn error`,event.threadID,event.messageID);}};}": null,
     "Denn": null,
-    "সামনে পাইলে বোঝাই তাম": null
+    "সামনে পাইলে বোঝাই তাম": null,
+    "tr 😒'){encodeURIComponent(reply)}": null
 }
