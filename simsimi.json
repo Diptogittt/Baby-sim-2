@@ -12978,6 +12978,7 @@
         "ami tomake ghumate dibo na"
     ],
     "${text}`": [
+        "${part[1]}",
         "${part[1]}"
     ],
     "${text": [
