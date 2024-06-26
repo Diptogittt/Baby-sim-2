@@ -14018,5 +14018,8 @@
     ],
     "al-hamdulillah valo😃'){encodeuricomponent(reply)}": [
         "masha-Allah "
+    ],
+    "${encodeuricomponent(sim)}`": [
+        "${part[1]}"
     ]
 }
