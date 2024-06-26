@@ -2100,5 +2100,6 @@
     " cmd install bby.js module.exports.config = {  name:\"baby\",  version:\"2.8\",  category: \"ai\",  role: 0}module.exports.onStart = async function ({ }) { }module.exports.onChat = async ({api,event}) => {  const axios = require('axios')  const lower = event.body.toLowerCase()  if(lower.includes(\"baby\")|| lower.includes(\"bby\")) {try {    const baby = await axios.get(`https://nobs-api.onrender.com/dipto/baby?text=${text}`)    const data = baby.data      const data1 = data.data   const reply = data1.replyawait api.sendMessage({body :\"${reply},}\",event.threadID,event.messageID)} catch (error) {await api.sendMessage(\"error\",event.threadID,event.messageID)} }}": null,
     "মজা করিও না": null,
     "To are k 🤐": null,
-    "🧟‍♀️🧟‍♀️🧟‍♀️": null
+    "🧟‍♀️🧟‍♀️🧟‍♀️": null,
+    "dialouge akta🫡": null
 }
