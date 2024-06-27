@@ -185,5 +185,8 @@
     ],
     "😆😒'){encodeuricomponent(reply)}": [
         "oi reply dau na k"
+    ],
+    "ami day to🙄'){encodeuricomponent(reply)}": [
+        "Ata mittha....robot k keu valobashena....sudhui moja ney"
     ]
 }
