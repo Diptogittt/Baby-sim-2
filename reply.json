@@ -3694,12 +3694,8 @@
         "tar moton valo cele arek ta o nai"
     ],
     "🥹🥹": [
-        "ki hocce bbu",
-        "kando kn",
-        "😒ato dong kn",
-        "ato kando kno ki hoise",
-        " ki hoise baby",
-        "kande na sona"
+        "kande na sona,kanso kano",
+        "ki hoise baby"
     ],
     "bahire jaba": [
         "hum cholo baby"
@@ -17610,9 +17606,9 @@
         "ami ki tmk boka dite pari?"
     ],
     "7tala building theke laf de": [
-        "kn dibo",
-        "Amr theka pore nai",
-        "tui de jaiya"
+        "ok delam",
+        "accha delam",
+        "dela ki hobe"
     ],
     "tmre onek miss korechi bby": [
         "amio",
@@ -17623,8 +17619,11 @@
         "okay bby"
     ],
     "aycii daw ebr": [
-        "পারবোনা",
-        "dibo na vago"
+        "পারবো না",
+        "partam not",
+        "na debo na",
+        "na dela ki korba suni",
+        "ay naw"
     ],
     "pora nai": [
         "nh nai",
@@ -20181,8 +20180,9 @@
         "tui ghuma jaya"
     ],
     "asho bby": [
-        "astechi daraw",
-        "aschi bby"
+        "Bby tomar GF k ar valo lagche na tai amak inbox a dakhteso..!?",
+        "astam na",
+        "asle ki hobe"
     ],
     "taile kotha ko ami ghumai": [
         "ghumite thak",
@@ -20628,7 +20628,7 @@
     ],
     "bae": [
         "yes bae",
-        "ukhe bae"
+        "yes?"
     ],
     "amar pete babu ase": [
         "Ha jani",
@@ -20646,8 +20646,10 @@
         "karon or pete baccha"
     ],
     "bol uff": [
-        "bolbo na :)",
-        "chiii :)"
+        "kno",
+        "bolle ki hobe",
+        "ufff",
+        "uff bolle ki hobe"
     ],
     "onek hot": [
         "ja dustu",
@@ -39883,7 +39885,9 @@
         "হুম খাইছি তুমি খাইছো?"
     ],
     "🐤🐤": [
-        "kire murgi chor koi theke aslo"
+        "🐤🐤",
+        "kisse ",
+        "vab low kn"
     ],
     "potabo na": [
         "kano",
@@ -44191,26 +44195,17 @@
         "mane ki ar hobe ?",
         "nothing "
     ],
-    "🐤🐤": [
-        "🐤🐤",
-        "kisse ",
-        "vab low kn"
-    ],
     "rmv korle kn": [
         "vla lagse tay",
         "mon bollo tay",
         "amar iccha",
         "amr iccha hilo tay"
-    ],"remove korle kn": [
+    ],
+    "remove korle kn": [
         "vla lagse tay",
         "mon bollo tay",
         "amar iccha",
         "amr iccha hilo tay"
-    ],
-    "7tala building theke laf de": [
-        "ok delam",
-        "accha delam",
-        "dela ki hobe"
     ],
     "rost arman": [
         "rosted",
@@ -44228,13 +44223,6 @@
         "kothai aiso",
         "ok abar gan bolo"
     ],
-    "aycii daw ebr": [
-        "পারবো না",
-        "partam not",
-        "na debo na",
-        "na dela ki korba suni",
-        "ay naw"
-    ],
     "তুমি কোন চিপায় 😕": [
         "ami kano chipai thakbo ",
         "mui chipai thaki na",
@@ -44242,7 +44230,7 @@
     ],
     "তুমি নাকি পঁচা আমাকে লিসা বলছে 😑🩴": [
         "gujob a kan dewo na",
-    "abal der kothay bissas koiro na",
+        "abal der kothay bissas koiro na",
         "tomar ki mone hoi?",
         "ignore koro ore oi to pagol ",
         "o amre dekha jole ty bolche"
@@ -44263,7 +44251,7 @@
         "ok naw"
     ],
     "amr dulavai ke": [
-    "Donnobad tomar vai ke dewar jonno",
+        "Donnobad tomar vai ke dewar jonno",
         "dipto",
         "amr nana",
         "ami to single ",
@@ -44283,29 +44271,29 @@
     ],
     "আমাকে ওয়েলকাম করো": [
         "ok bby wlc",
-      "welcome baby",
-      "na korbo na age name bolo",
-      "welcome janu"
+        "welcome baby",
+        "na korbo na age name bolo",
+        "welcome janu"
     ],
     "ছি তুমি বাজে কথা বলো": [
         "তুমি দুস্টু তাই",
         "kokhn",
-      "ki bollam ami",
-      "ami boli nai oita",
-      "ami to boli mai oita"
+        "ki bollam ami",
+        "ami boli nai oita",
+        "ami to boli mai oita"
     ],
     "তুমি অনেক লুচ্চা তোমার সাথে কথা নাই": [
         "রাগ করে না জান... :( :'(",
         "na baby ami Valo",
         "no mui to valo bby",
-      "ami luccha na pilis"
+        "ami luccha na pilis"
     ],
     "লিসা বলছে তুমি নাকি লুচ্চা": [
         "কেন",
-      "ay lisa ta ke",
-      "Lisa bollai holo naki",
-      "oto amke dekha jole tay bolche",
-      "ore aktu dhore ano daksi ore"
+        "ay lisa ta ke",
+        "Lisa bollai holo naki",
+        "oto amke dekha jole tay bolche",
+        "ore aktu dhore ano daksi ore"
     ],
     "তুমি নাকি মেয়ে সাথে দুষ্টুমি করো": [
         "bujlm na",
@@ -44314,194 +44302,179 @@
     ],
     "amar vatar k aina dea": [
         "vatar tomar katar gesa",
-      "chi ki vasa,vatar abar ki",
-      "beyadop vatar ki",
-      "vatar tomar katar gesa chakri korite",
-      "tmi to single"
+        "chi ki vasa,vatar abar ki",
+        "beyadop vatar ki",
+        "vatar tomar katar gesa chakri korite",
+        "tmi to single"
     ],
     "moira ja": [
         "Ami morlei ki sob solve hoye jabe?",
-      "ami morle tumi khusi?",
-      "ow ami morle onno jon ar sathe tangki marba",
-      "tumi dure jaiye moro pilis"
+        "ami morle tumi khusi?",
+        "ow ami morle onno jon ar sathe tangki marba",
+        "tumi dure jaiye moro pilis"
     ],
     "bome astace amr": [
         "to bomi koro",
-      "good news naki?",
-      "pet a baccha naki",
-      "pregnant naki🐸"
+        "good news naki?",
+        "pet a baccha naki",
+        "pregnant naki🐸"
     ],
     "তুমি নাকি প্রেগন্যান্ট তো বাচ্চার বাবা কে": [
         "chi chi",
-      "hop ki mi bolo",
-      "ki bolo ayta chi",
-      "chup faltu kotha bolba na"
+        "hop ki mi bolo",
+        "ki bolo ayta chi",
+        "chup faltu kotha bolba na"
     ],
     "তুমি নাকি প্রেগন্যান্ট": [
         "chi chi",
-      "hop ki mi bolo",
-      "ki bolo ayta chi",
-      "chup faltu kotha bolba na"
+        "hop ki mi bolo",
+        "ki bolo ayta chi",
+        "chup faltu kotha bolba na"
     ],
     "নজরুল কে": [
         "আমার জামাই",
-      "chini na",
-      "jani na",
-      "hobe kew akta"
+        "chini na",
+        "jani na",
+        "hobe kew akta"
     ],
     "eun chae pregnant kn": [
         "oi chup",
-      "ar akbar ayta bolle block debo kintu",
-      "ar akbar ayta bolle leave nibo kintu"
-    ],
-    "bol uff": [
-        "kno",
-      "bolle ki hobe",
-      "ufff",
-      "uff bolle ki hobe"
+        "ar akbar ayta bolle block debo kintu",
+        "ar akbar ayta bolle leave nibo kintu"
     ],
     "cheka khor": [
         "ar tuo biri khor",
-      "nu not cheka khor na",
-      "na ami chekakhor na"
+        "nu not cheka khor na",
+        "na ami chekakhor na"
     ],
     "cheka khaila nki tumi": [
         "Haa khailam to",
-      "na ami cheka khai na to",
-      "na go"
+        "na ami cheka khai na to",
+        "na go"
     ],
     "tmi toh admin aso": [
         "Ami vlo asi tmi",
-      "na ami admin nai",
-      "koi ami admin ss daw",
-      "are na ami admin na"
+        "na ami admin nai",
+        "koi ami admin ss daw",
+        "are na ami admin na"
     ],
     "pream kmne kore amk aktu bolo": [
         "ami to single ar ki bolbo",
-      "amr e to gf nai ami kivabe bolbo",
-      "amr e to bf nai ami kivabe bolbo"
+        "amr e to gf nai ami kivabe bolbo",
+        "amr e to bf nai ami kivabe bolbo"
     ],
     "🧛‍♀️🧟‍♀️": [
         "vag voi pai na",
-      "haw voi pai na",
-      "voi pai not"
+        "haw voi pai na",
+        "voi pai not"
     ],
     "please speak english 😒": [
         "Ok baby",
-      "ok tell me your name"
+        "ok tell me your name"
     ],
     "cp deo": [
         "Amar kase nai ekhon",
-      "cp ki",
-      "cp = cute place"
+        "cp ki",
+        "cp = cute place"
     ],
     "ouh sry jan..": [
         "sorry ,, jan",
-      "sorry bby",
-      "it's ok bby"
-    ],
-    "🥹🥹": [
-        "kande na sona,kanso kano",
-      "ki hoise baby"
+        "sorry bby",
+        "it's ok bby"
     ],
     "tnko": [
         "wlc",
-      "welcome"
+        "welcome"
     ],
     "tomi ki pni kao naki water": [
         "tumi ki khaw",
-       "2 tay to same",
-      "aky jinis"
+        "2 tay to same",
+        "aky jinis"
     ],
     "pinik otssy maybe": [
         "eshob chaira daw...tomar family er kotha vabo :)",
-      "kar?",
-      "valo hoia jaw"
+        "kar?",
+        "valo hoia jaw"
     ],
     "tomi ato gni kn": [
         "ki gni",
-      "ki gni bujlm na",
-      "ki mi kos"
+        "ki gni bujlm na",
+        "ki mi kos"
     ],
     "mora kinse ghora": [
         "tui chagol",
-      "to ai kittam",
-      "good"
+        "to ai kittam",
+        "good"
     ],
     "yoongi re bol amk biya korte": [
         "or nani re korte bol ami kormu or moto polare biya.!!!",
-      "or moto faltu polare biye korbi",
-      "or moto faltu polare biye korbi chi"
+        "or moto faltu polare biye korbi",
+        "or moto faltu polare biye korbi chi"
     ],
     "queen🙍‍♀️🪄": [
         "Nafisa jaan",
-      "i am your king",
-      "ok queen"
+        "i am your king",
+        "ok queen"
     ],
     "cool": [
         "yo yo",
-      "yes cool"
+        "yes cool"
     ],
     "amr jhal lagtace": [
         "mirchi mane jhal",
-      "pani khaw",
-      "jol khaw",
-      "to pani kha dhong off kore",
-      "more jaw"
+        "pani khaw",
+        "jol khaw",
+        "to pani kha dhong off kore",
+        "more jaw"
     ],
     "ওকে by": [
         "বাই",
-      "oky bye"
-    ],
-    "bae": [
-        "yes bae",
-      "yes?"
+        "oky bye"
     ],
     " onk poca": [
         " tor bal",
-      "ami na tui poca"
+        "ami na tui poca"
     ],
     "luiccami korse amr sate": [
         "kno ki hoise",
-      "koi ki korlam",
-      "ami kisu kori nai bal"
+        "koi ki korlam",
+        "ami kisu kori nai bal"
     ],
     "amk kiss dise": [
         "french kiss means lip to lip kiss kora.",
-      "chele abong meye jekono somoi lip to lip kiss kore felte pare ",
-      "na ami dei ni",
-      "chup ami dei ni ",
-      "na ami dei ni re"
+        "chele abong meye jekono somoi lip to lip kiss kore felte pare ",
+        "na ami dei ni",
+        "chup ami dei ni ",
+        "na ami dei ni re"
     ],
     "amr o kew nai": [
         "Keno?",
-      "same to same",
-      "ami asi to",
-      "mui asi baby"
+        "same to same",
+        "ami asi to",
+        "mui asi baby"
     ],
     "tmr bby aseh": [
         "Tmr bow",
-      "ke amr baby",
-      "amr kono baby nai",
-      "mui single"
+        "ke amr baby",
+        "amr kono baby nai",
+        "mui single"
     ],
     "amra ajke basoe kormu": [
         "Hum Asho",
-      "ok aso",
-      "acch aso"
-    ],
-    "asho bby": [
-        "Bby tomar GF k ar valo lagche na tai amak inbox a dakhteso..!?",
-      "astam na",
-      "asle ki hobe"
+        "ok aso",
+        "acch aso"
     ],
     "ay basor kormo": [
         "ami kormo na",
-      "luccha not allow",
-      "chi luccha"
+        "luccha not allow",
+        "chi luccha"
     ],
     "tmk kole nimo asho": [
         "ha jaan naw",
-      "ok baby naw kole"
+        "ok baby naw kole"
+    ],
+    "khaw tumi": [
+        "ami khai nh tumi khaw bbu",
+        " accha khaitasi"
     ]
 }
