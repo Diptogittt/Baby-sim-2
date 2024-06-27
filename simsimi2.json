@@ -182,5 +182,8 @@
     ],
     "polar'){encodeuricomponent(reply)}": [
         "smart pola leikha search koro"
+    ],
+    "😆😒'){encodeuricomponent(reply)}": [
+        "oi reply dau na k"
     ]
 }
