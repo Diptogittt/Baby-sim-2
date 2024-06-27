@@ -14,7 +14,7 @@ app.get("/", function (req, res) {
 
 app.use(express.json());
 const reactFilePath = __dirname + "/react.json";
-const newReplyFilePath = __dirname + "/simsimi.json";
+const newReplyFilePath = __dirname + "/simsimi2.json";
 const defaultReplyFilePath = __dirname + "/reply.json";
 const replyDirectoryPath = __dirname + "/replies/";
 const senderFilePath = __dirname + "/sender.json";
