@@ -1078,5 +1078,8 @@
         "${part[1]}",
         "${part[1]}",
         "${part[1]}"
+    ],
+    "play a son": [
+        "khamu\n"
     ]
 }
