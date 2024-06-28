@@ -630,5 +630,8 @@
     ],
     "amr nanar bal deksili nhki": [
         "bal kos"
+    ],
+    "${encodeuricomponent(message)}`": [
+        "${part[1]}"
     ]
 }
