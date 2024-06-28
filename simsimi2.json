@@ -632,6 +632,7 @@
         "bal kos"
     ],
     "${encodeuricomponent(message)}`": [
+        "${part[1]}",
         "${part[1]}"
     ]
 }
