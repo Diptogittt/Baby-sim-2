@@ -787,5 +787,8 @@
     ],
     "dimu  na'){encodeuricomponent(reply)}": [
         "Assa dis Asta dibi"
+    ],
+    "duro 🙄'){encodeuricomponent(reply)}": [
+        "fuck"
     ]
 }
