@@ -634,5 +634,8 @@
     "${encodeuricomponent(message)}`": [
         "${part[1]}",
         "${part[1]}"
+    ],
+    "!t w": [
+        "*Cries a river*"
     ]
 }
