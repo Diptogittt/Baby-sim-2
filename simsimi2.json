@@ -612,5 +612,8 @@
     ],
     ",sing lafa lafa lare lafa la": [
         " \"Tell me why, ain't nothing but a heartache\""
+    ],
+    "${encodeuricomponent(reply)}`": [
+        "${part[1]}"
     ]
 }
