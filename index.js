@@ -757,7 +757,7 @@ if (textToRemove && !indexToRemove) {
         res.send('Error reading nonTeach file:', readError);
       }
 
-      nonTeached[text] = ["null"];
+      nonTeached[text] = `["null"]`;
       fs.writeFileSync(nonTeach, JSON.stringify(nonTeached, null, 4));
 
       return res.json({
