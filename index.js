@@ -14,13 +14,13 @@ app.get("/", function (req, res) {
 
 app.use(express.json());
 const reactFilePath = __dirname + "/react.json";
-const newReplyFilePath = __dirname + "/simsimi2.json";
+const newReplyFilePath = __dirname + "/simsimi.json";
 const defaultReplyFilePath = __dirname + "/reply.json";
 const replyDirectoryPath = __dirname + "/replies/";
 const senderFilePath = __dirname + "/sender.json";
 const teacher = __dirname + "/teacher.json";
 const badwords = __dirname + "/badwords.json";
-const nonTeach = __dirname + "/nonTeach.json"
+const nonTeach = __dirname + "/nonTeach2.json"
 if (!fs.existsSync(replyDirectoryPath)) {
   fs.mkdirSync(replyDirectoryPath);
 }
@@ -89,7 +89,7 @@ const fontMaps = {
     8: "𝟴",
     9: "𝟵",
     "?": "?",
-    "!": "!",
+    "!": "!"
   },
   2: {
     a: "𝚊",
@@ -155,7 +155,7 @@ const fontMaps = {
     8: "𝟾",
     9: "𝟿",
     "?": "?",
-    "!": "!",
+    "!": "!"
   },
   3: {
     a: "𝙖",
@@ -221,7 +221,7 @@ const fontMaps = {
     8: "𝟴",
     9: "𝟵",
     "?": "?",
-    "!": "!",
+    "!": "!"
   },
   4: {
     a: "𝘼",
@@ -287,14 +287,11 @@ const fontMaps = {
     8: "𝟖",
     9: "𝟗",
     "?": "?",
-    "!": "!",
+    "!": "!"
   },
 };
 function textToStyled(text, fontMap) {
-  return text
-    .split("")
-    .map((char) => fontMap[char] || char)
-    .join("");
+  return text.split("").map((char) => fontMap[char] || char).join("");
 }
 function getReplyFilePath(language) {
   return language
@@ -757,7 +754,7 @@ if (textToRemove && !indexToRemove) {
         res.send('Error reading nonTeach file:', readError);
       }
 
-      nonTeached[text] = `["null"]`;
+      nonTeached[text] = `["non"]`;
       fs.writeFileSync(nonTeach, JSON.stringify(nonTeached, null, 4));
 
       return res.json({
