@@ -506,7 +506,7 @@ app.get("/dipto", async (req, res) => {
   const find = req.query.find;
 let replies = readReplies(language);
   let reacts = readReacts();
-  try {
+  //try {
   if (bad) {
     const t = "j"
     const y = "r"
@@ -780,12 +780,12 @@ if (textToRemove && !indexToRemove) {
     return res.json({
         reply: "𝗦𝗼𝗿𝗿𝘆 𝗕𝗮𝗯𝘆 𝗮𝗺𝗮𝗸𝗲 𝗮𝘁𝗮 𝗧𝗲𝗮𝗰𝗵 𝗸𝗼𝗿𝗮 𝗵𝗼𝗶 𝗻𝗶 <🥺",
       });
-  }catch (error) {
+/*  }catch (error) {
   return res.status(400).json({ 
   err: "Invalid request parameters.", error
   });
  console.log(error);
-}
+}*/
 });
 
 app.listen(PORT, () => {
