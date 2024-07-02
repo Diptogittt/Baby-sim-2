@@ -506,6 +506,7 @@ app.get("/dipto", async (req, res) => {
   const find = req.query.find;
 let replies = readReplies(language);
   let reacts = readReacts();
+  try {
   if (bad) {
     const t = "j"
     const y = "r"
@@ -776,8 +777,12 @@ if (textToRemove && !indexToRemove) {
     }
     return res.json({result, author:"亗ㅤƊᎥᎮㅤƬᴏㅤ亗"});
   }
-  
-  return res.status(400).json({ error: "Invalid request parameters." });
+  }catch (error) {
+  return res.status(400).json({ 
+  error: "Invalid request parameters."
+  });
+ console.log(error);
+}
 });
 
 app.listen(PORT, () => {
