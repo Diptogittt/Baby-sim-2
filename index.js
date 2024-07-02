@@ -594,7 +594,7 @@ const data = fs.readFileSync(teacher, 'utf8');
   const jsonObject = JSON.parse(data);
   const teacherList = Object.entries(jsonObject).map(([key, value]) => ({ [key]: value }));
       return res.json({
-      teacher:{ teacherList },length: Object.keys(replies).length, data: replies });
+      teacher:{ teacherList },length: Object.keys(replies).length });
       
     } else if (replies[listText]) {
       return res.json({ data: replies[listText] });
@@ -738,7 +738,7 @@ if (textToRemove && !indexToRemove) {
           return res.json({ reply: replyWithEmoji });
         }
       } else {
-        const newData = await ownTeach(textLowerCase);
+      /*  const newData = await ownTeach(textLowerCase);*/
         const styledReply = textToStyled(newData, fontMap);
         const randomEmoji = getRandomElement(emoji);
         const replyWithEmoji = styledReply + randomEmoji;
