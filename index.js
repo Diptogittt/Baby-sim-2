@@ -779,7 +779,7 @@ if (textToRemove && !indexToRemove) {
   }
   }catch (error) {
   return res.status(400).json({ 
-  error: "Invalid request parameters."
+  err: "Invalid request parameters.", error
   });
  console.log(error);
 }
