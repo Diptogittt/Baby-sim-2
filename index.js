@@ -737,13 +737,13 @@ if (textToRemove && !indexToRemove) {
         } else {
           return res.json({ reply: replyWithEmoji });
         }
-      } else {
-      /*  const newData = await ownTeach(textLowerCase);*/
+      }/* else {
+      /*  const newData = await ownTeach(textLowerCase);
         const styledReply = textToStyled(newData, fontMap);
         const randomEmoji = getRandomElement(emoji);
         const replyWithEmoji = styledReply + randomEmoji;
         return res.json({ reply: replyWithEmoji });
-      }
+      }*/
     } catch (error) {
       console.log(error);
       let nonTeached = {};
