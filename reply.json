@@ -915,7 +915,8 @@
         " ki bolbo bujlam na",
         " kita?",
         "ki blbo",
-        " ki shunte chao bolo"
+        " ki shunte chao bolo",
+        "ki bolbo"
     ],
     "asslamwalaikum": [
         "walaikum asslam"
@@ -50959,5 +50960,27 @@
     "kn bby ki hoise": [
         "kicu nah bby",
         " kisu hy nii janu"
+    ],
+    "ki rakhsi": [
+        "kisu na",
+        " ki ar rakba",
+        " ki rakte parba tmi",
+        "kisu na",
+        " ki ar rakba",
+        " ki rakte parba tmi"
+    ],
+    "aj oke maira obostha kharap kormu": [
+        "ho",
+        " ekdom sesh koira felmu"
+    ],
+    "ki kora jai": [
+        "oke mara jai"
+    ],
+    "chol aj or khobor ache": [
+        "ho chol"
+    ],
+    "ki je bolos": [
+        "ho re bhai",
+        " thik e holi"
     ]
 }
