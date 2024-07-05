@@ -52589,5 +52589,13 @@
     "argentina or brazil": [
         "argentina",
         " brazil"
+    ],
+    "siu , siuu ,siuuu , sui , suii , suiii": [
+        "siu ",
+        " siuu ",
+        "siuuu ",
+        " sui ",
+        " suii ",
+        " suiii"
     ]
 }
