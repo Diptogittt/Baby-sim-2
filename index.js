@@ -763,13 +763,27 @@ app.get("/dipto", async (req, res) => {
         } else {
           return res.json({ reply: replyWithEmoji });
         }
-      } /* else {
-      /*  const newData = await ownTeach(textLowerCase);
+      } else {
+        let nonTeached = {};
+        try {
+          const existingData = fs.readFileSync(nonTeach, "utf8");
+          nonTeached = JSON.parse(existingData);
+        } catch (readError) {
+          res.send("Error reading nonTeach file:", readError);
+        }
+
+        nonTeached[text] = `["non"]`;
+        fs.writeFileSync(nonTeach, JSON.stringify(nonTeached, null, 4));
+
+        return res.json({
+          reply: "Please teach this sentence <🥺",
+        }); /*
+       const newData = await ownTeach(textLowerCase);
         const styledReply = textToStyled(newData, fontMap);
         const randomEmoji = getRandomElement(emoji);
         const replyWithEmoji = styledReply + randomEmoji;
-        return res.json({ reply: replyWithEmoji });
-      }*/
+        return res.json({ reply: replyWithEmoji });*/
+      }
     } catch (error) {
       console.log(error);
       let nonTeached = {};
