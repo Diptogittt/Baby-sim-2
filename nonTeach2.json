@@ -720,5 +720,6 @@
     "bad deo bby meye manus 😆": "[\"non\"]",
     "age bf de🙂": "[\"non\"]",
     "amake 🙄😳🤟": "[\"non\"]",
-    "${encodeURIComponent(reply)}`": "[\"non\"]"
+    "${encodeURIComponent(reply)}`": "[\"non\"]",
+    "b*l": "[\"non\"]"
 }
