@@ -396,13 +396,14 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
     const wordsToRemove = words
       .split(",")
       .map((word) => word.trim().toLowerCase());
+
     forbiddenWords = forbiddenWords.filter(
       (word) => !wordsToRemove.includes(word),
     );
+
     fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
     return "✅ | BadWords removed";
   }
-
   if (action === "list") {
     return forbiddenWords;
   }
