@@ -721,5 +721,6 @@
     "age bf de🙂": "[\"non\"]",
     "amake 🙄😳🤟": "[\"non\"]",
     "${encodeURIComponent(reply)}`": "[\"non\"]",
-    "b*l": "[\"non\"]"
+    "b*l": "[\"non\"]",
+    "amr. ami bow😒": "[\"non\"]"
 }
