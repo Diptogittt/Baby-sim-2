@@ -393,6 +393,7 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
   }
 
   if (action === "remove") {
+    let forbiddenWords = []
     const wordsToRemove = words
       .split(",")
       .map((word) => word.trim().toLowerCase());
