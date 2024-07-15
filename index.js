@@ -380,7 +380,7 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
     );
   }
   const data = fs.readFileSync(badwords, "utf8");
-  const forbiddenWords = JSON.parse(data);
+  let forbiddenWords = JSON.parse(data);
   if (action === "add") {
     const wordsToAdd = words
       .split(",")
@@ -393,7 +393,7 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
   }
 
   if (action === "remove") {
-    let forbiddenWords = []
+    // let forbiddenWords = []
     const wordsToRemove = words
       .split(",")
       .map((word) => word.trim().toLowerCase());
