@@ -807,7 +807,12 @@ app.get("/dipto", async (req, res) => {
     for (const [replyKey, values] of Object.entries(replies)) {
       if (
         replyKey.split(/\s+/).includes(find) ||
-        values.some((value) => value.split(/\s+/).includes(find))
+        values.some((value) => {
+          if (typeof value === "string") {
+            return value.split(/\s+/).includes(find);
+          }
+          return false;
+        })
       ) {
         result[replyKey] = values;
       }
@@ -820,6 +825,7 @@ app.get("/dipto", async (req, res) => {
     }
     return res.json({ result, author: "亗ㅤƊᎥᎮㅤƬᴏㅤ亗" });
   }
+
   return res.json({
     reply: "𝗦𝗼𝗿𝗿𝘆 𝗕𝗮𝗯𝘆 𝗮𝗺𝗮𝗸𝗲 𝗮𝘁𝗮 𝗧𝗲𝗮𝗰𝗵 𝗸𝗼𝗿𝗮 𝗵𝗼𝗶 𝗻𝗶 <🥺🥹🥹",
   });
