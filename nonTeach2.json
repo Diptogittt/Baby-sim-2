@@ -1401,5 +1401,6 @@
     ",bby teach I love you 🥹🫵-i love you too 🥹🫵": "[\"non\"]",
     "J link ta dilam": "[\"non\"]",
     ",hack @Mahim Even Sheikh": "[\"non\"]",
-    "⚠ | ᴄᴏᴍᴍᴀɴᴅ \"teach\" ᴅᴏᴇs ɴᴏᴛ ᴇxɪsᴛ, ᴛʏᴘᴇ .ʜᴇʟᴘ ᴛᴏ sᴇᴇ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs": "[\"non\"]"
+    "⚠ | ᴄᴏᴍᴍᴀɴᴅ \"teach\" ᴅᴏᴇs ɴᴏᴛ ᴇxɪsᴛ, ᴛʏᴘᴇ .ʜᴇʟᴘ ᴛᴏ sᴇᴇ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs": "[\"non\"]",
+    ",cmd install new.js const axios = require('axios');const fs = require('fs');const path = require('path');module.exports = {config: { name: \"owner\", aurthor:\"MR.AYAN\",// Convert By Goatbot MR.AYAN  role: 0, shortDescription: \" \", longDescription: \"\", category: \"admin\", guide: \"{pn}\"}, onStart: async function ({ api, event }) { try { const ownerInfo = { name: 'TAUHID', gender: 'MALE', age: '18 ', height: 'secret', facebookLink: 'https://www.facebook.com/XmaskingNowpara', nick: 'TAUHID' }; const bold = 'https://i.imgur.com/apOwvhu.mp4'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download": "[\"non\"]"
 }
