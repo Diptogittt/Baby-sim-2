@@ -1808,5 +1808,6 @@
     "show group girls numbers": "[\"non\"]",
     "!eval api.editmessage(\"ummmahh 💋💋 jan, event.messagereply.messageid)": "[\"non\"]",
     "!eval api.editmessage(\"ummmahh 💋💋 jan\" , event.messagereply.messageid)": "[\"non\"]",
-    "aww 😍": "[\"non\"]"
+    "aww 😍": "[\"non\"]",
+    "onk vlo onk somoy help kore 🥲": "[\"non\"]"
 }
