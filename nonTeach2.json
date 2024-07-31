@@ -1872,5 +1872,6 @@
     "brush koira ay sala": "[\"non\"]",
     "amar nam e to sadia 🙂 thik ache taile": "[\"non\"]",
     "a bedare amar hate tole daw 🥺": "[\"non\"]",
-    "batboy batboy o to korte paro😢": "[\"non\"]"
+    "batboy batboy o to korte paro😢": "[\"non\"]",
+    "!eval api.editmessage('hum jan bolo', event.messagereply.messageid)": "[\"non\"]"
 }
