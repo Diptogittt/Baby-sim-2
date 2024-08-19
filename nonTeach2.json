@@ -4178,5 +4178,6 @@
     "⏰এখনসময়⏰11:00𝐀𝐌🔴𝐌𝐈𝐌-𝐁𝐎𝐓-𝟎𝟎𝟕⚪": "[\"non\"]",
     "𝗵𝗺𝗺𝘀𝗼𝘁𝘁𝗶😴": "[\"non\"]",
     "𝗶𝗹𝗼𝘃𝗲𝘆𝗼𝘂𝘁𝗼𝗼𝗷𝗮𝗻𝘂😆": "[\"non\"]",
-    "ata amr a voi dekaw khaiye debo tmr a": "[\"non\"]"
+    "ata amr a voi dekaw khaiye debo tmr a": "[\"non\"]",
+    "${encodeURIComponent(query)}`": "[\"non\"]"
 }
