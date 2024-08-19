@@ -4266,5 +4266,6 @@
     "*bbyteachA6Y-Hmkou😶oyakonbusyamkekou": "[\"non\"]",
     "*spy": "[\"non\"]",
     "💫𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘥𝘠𝘰𝘶𝘵𝘶𝘣𝘦𝘝𝘪𝘥𝘦𝘰♡⛱": "[\"non\"]",
-    "*evalconstTT=event;out(TT)": "[\"non\"]"
+    "*evalconstTT=event;out(TT)": "[\"non\"]",
+    "*evalconstTT=thread;out(TT)": "[\"non\"]"
 }
