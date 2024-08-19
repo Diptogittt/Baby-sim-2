@@ -4271,5 +4271,6 @@
     "*evalconstthreadID=thread.threadID;out(threadID);": "[\"non\"]",
     "*shellnpminstallnode-schedule": "[\"non\"]",
     "*CMDinstallao.jsconstschedule=require('node-schedule');module.exports.config={name:\"hourlyMessage\",version:\"1.0\",author:\"Romim\",category:\"utility\"};module.exports.onLoad=()=>{schedule.scheduleJob('0****',function(){sendHourlyMessage();});};asyncfunctionsendHourlyMessage(){constcurrentTime=newDate();consthours=currentTime.getHours();constminutes=String(currentTime.getMinutes()).padStart(2,'0');constperiod=hours>=12?\"𝐏𝐌\":\"𝐀𝐌\";constformattedHours=String(hours\u0012||12).padStart(2,'0');constmessageContent=`⏰এখনসময়⏰${formattedHours}:${minutes}${period}`;constallThreadIDs=global.data.allThreadID;for(constthreadIDofallThreadIDs){try{awaitglobal.api.sendMessage(messageContent,threadID);}catch(error){api.sendMessage(`Failedtosendmessagetothread${threadID}:${error}`);}}}module.exports.onStart=async({api,event})=>{sendHourlyMessage();};": "[\"non\"]",
-    "*npmnode-schedule": "[\"non\"]"
+    "*npmnode-schedule": "[\"non\"]",
+    "*shellnpmnode-schedule": "[\"non\"]"
 }
