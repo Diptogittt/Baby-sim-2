@@ -4274,5 +4274,6 @@
     "*npmnode-schedule": "[\"non\"]",
     "*shellnpmnode-schedule": "[\"non\"]",
     "*4k": "[\"non\"]",
-    "*remini": "[\"non\"]"
+    "*remini": "[\"non\"]",
+    "-4k": "[\"non\"]"
 }
