@@ -4246,5 +4246,6 @@
     "*album2": "[\"non\"]",
     "*ytb-aCupid": "[\"non\"]",
     "!CMDloadll": "[\"non\"]",
-    "*helpinsta": "[\"non\"]"
+    "*helpinsta": "[\"non\"]",
+    "!eventuallyloadall": "[\"non\"]"
 }
