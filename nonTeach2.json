@@ -4253,5 +4253,6 @@
     "*metahi": "[\"non\"]",
     "*metateachRomim mycreator": "[\"non\"]",
     "*Random": "[\"non\"]",
-    "*eventloadall": "[\"non\"]"
+    "*eventloadall": "[\"non\"]",
+    "*CMDloadall": "[\"non\"]"
 }
