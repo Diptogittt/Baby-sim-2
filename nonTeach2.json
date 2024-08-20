@@ -4391,5 +4391,11 @@
     "/pfp": "[\"non\"]",
     "@NijhumAktertumieitadeletedaw": "[\"non\"]",
     " cmdinstallimg.jsconstaxios=require('axios');module.exports={config:{name:\"f\",aliases:[\"img\"],version:\"1.0.0\",author:\"GoatbotGenerator\",role:0,category:\"ImageGeneration\",shortDescription:{en:\"Generateanimagebasedonaprompt\",vi:\"Tạohìnhảnhdựatrênmộtprompt\"},longDescription:{en:\"ThiscommandgeneratesanimagebasedonapromptusinganexternalAPI.\",vi:\"LệnhnàytạoramộthìnhảnhdựatrênmộtpromptbằngcáchsửdụngAPIbênngoài.\"},guide:{en:\"Tousethiscommand,simplytypegenerateImagefollowedbyyourprompt.\",vi:\"Đểsửdụnglệnhnày,đơngiảnnhấpgenerateImagetheosaulàpromptcủabạn.\"}},onStart:async({event,args,api,commandName})=>{try{constprompt=args.join(\"\");//JointheargumentstoformthepromptconstapiUrl=`https://mostakim-api.onrender.com/flux?text=${encodeURIComponent(prompt)}`;api.sendMessage(\"Imageisbeinggeneratedbasedonyourprompt.Pleasewait...\",event.threadID);//FetchimageusingtheAPIconstresponse=awaitaxios.get(apiUrl);//CheckiftheresponsecontainsanimageURLif(response.data": "[\"non\"]",
-    "✅|Installedcommand\"img\"successfully,thecommandfileissavedat/scripts/cmds/img.js": "[\"non\"]"
+    "✅|Installedcommand\"img\"successfully,thecommandfileissavedat/scripts/cmds/img.js": "[\"non\"]",
+    " cmdloadimg": "[\"non\"]",
+    "✅|Loadedcommand\"img\"successfully": "[\"non\"]",
+    " imgacat": "[\"non\"]",
+    "Imageisbeinggeneratedbasedonyourprompt.Pleasewait...": "[\"non\"]",
+    "@MøhâmmãdŠhîhäbPKpicremoveden😒": "[\"non\"]",
+    "@NijhumAkterapnakekjbolsi": "[\"non\"]"
 }
