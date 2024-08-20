@@ -4628,5 +4628,6 @@
     "- accah kanna koro dekhi ami 🙂💔": "[\"non\"]",
     "omaaa": "[\"non\"]",
     "💛": "[\"non\"]",
-    "abbu dakli": "[\"non\"]"
+    "abbu dakli": "[\"non\"]",
+    "${encodeURIComponent(reply)}`": "[\"non\"]"
 }
