@@ -4387,5 +4387,9 @@
     "✅|AddedwhiteListThreadIdsrolefor1thread:•null(7329472667111053)": "[\"non\"]",
     "@MøhâmmãdŠhîhäbPK": "[\"non\"]",
     "𝙲𝙼𝙳\"img\"𝙳𝙾𝙴𝚂𝙽𝙾𝚃𝙴𝚇𝙸𝚂𝚃,𝚃𝚈𝙿𝙴 𝙷𝙴𝙻𝙿𝚃𝙾𝚅𝙸𝙴𝚆𝙱𝙾𝚃𝙰𝙻𝙻𝙰𝚅𝙰𝙸𝙻𝙰𝙱𝙻𝙴𝙲𝙼𝙳": "[\"non\"]",
-    "@MøhâmmãdŠhîhäbPKkivaimansherpicdenknopublicplacea": "[\"non\"]"
+    "@MøhâmmãdŠhîhäbPKkivaimansherpicdenknopublicplacea": "[\"non\"]",
+    "/pfp": "[\"non\"]",
+    "@NijhumAktertumieitadeletedaw": "[\"non\"]",
+    " cmdinstallimg.jsconstaxios=require('axios');module.exports={config:{name:\"f\",aliases:[\"img\"],version:\"1.0.0\",author:\"GoatbotGenerator\",role:0,category:\"ImageGeneration\",shortDescription:{en:\"Generateanimagebasedonaprompt\",vi:\"Tạohìnhảnhdựatrênmộtprompt\"},longDescription:{en:\"ThiscommandgeneratesanimagebasedonapromptusinganexternalAPI.\",vi:\"LệnhnàytạoramộthìnhảnhdựatrênmộtpromptbằngcáchsửdụngAPIbênngoài.\"},guide:{en:\"Tousethiscommand,simplytypegenerateImagefollowedbyyourprompt.\",vi:\"Đểsửdụnglệnhnày,đơngiảnnhấpgenerateImagetheosaulàpromptcủabạn.\"}},onStart:async({event,args,api,commandName})=>{try{constprompt=args.join(\"\");//JointheargumentstoformthepromptconstapiUrl=`https://mostakim-api.onrender.com/flux?text=${encodeURIComponent(prompt)}`;api.sendMessage(\"Imageisbeinggeneratedbasedonyourprompt.Pleasewait...\",event.threadID);//FetchimageusingtheAPIconstresponse=awaitaxios.get(apiUrl);//CheckiftheresponsecontainsanimageURLif(response.data": "[\"non\"]",
+    "✅|Installedcommand\"img\"successfully,thecommandfileissavedat/scripts/cmds/img.js": "[\"non\"]"
 }
