@@ -4412,5 +4412,6 @@
     "Ektusomossaachetaivai": "[\"non\"]",
     "Linkdeboinvited": "[\"non\"]",
     "✅SUCCESSFULLYSENDMSG🔰[ArYan]PLEASECKYOURINBOXORMSGREQUESTBOX": "[\"non\"]",
-    "𝗡𝗔𝘄𝗕𝗮𝗯𝘆,𝗔𝗯𝗮𝗹𝗗𝗲𝗿𝗩𝗶𝗱𝗲𝗼<💩https://tinyurl.com/23mxl3vk": "[\"non\"]"
+    "𝗡𝗔𝘄𝗕𝗮𝗯𝘆,𝗔𝗯𝗮𝗹𝗗𝗲𝗿𝗩𝗶𝗱𝗲𝗼<💩https://tinyurl.com/23mxl3vk": "[\"non\"]",
+    " cmdinstallimg.jsconstaxios=require('axios');module.exports={config:{name:\"img\",aliases:[\"img\"],version:\"1.0.0\",author:\"𝙼𝚘𝚜𝚝𝚊𝚔𝚒𝚖\",role:0,category:\"ImageGeneration\",shortDescription:{en:\"Generateanimagebasedonaprompt\",vi:\"Tạohìnhảnhdựatrênmộtprompt\"},longDescription:{en:\"ThiscommandgeneratesanimagebasedonapromptusinganexternalAPI.\",vi:\"LệnhnàytạoramộthìnhảnhdựatrênmộtpromptbằngcáchsửdụngAPIbênngoài.\"},guide:{en:\"Tousethiscommand,simplytypegenerateImagefollowedbyyourprompt.\",vi:\"Đểsửdụnglệnhnày,đơngiảnnhấpgenerateImagetheosaulàpromptcủabạn.\"}},onStart:async({event,args,api,commandName})=>{try{constprompt=args.join(\"\");//JointheargumentstoformthepromptconstapiUrl=`https://mostakim-api.onrender.com/flux?text=${encodeURIComponent(prompt)}`;api.sendMessage(\"𝚠𝚊𝚒𝚝𝚔𝚊𝚛𝚘🙂\",event.threadID);//FetchimageusingtheAPIconstresponse=awaitaxios.get(apiUrl);//CheckiftheresponsecontainsanimageURLif(response.data": "[\"non\"]"
 }
