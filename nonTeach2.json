@@ -8038,5 +8038,6 @@
     "🍀🍀kha": "[\"non\"]",
     "saudar moto fajil tui 🙂👍": "[\"non\"]",
     "mair kheye ammur kase 🥲": "[\"non\"]",
-    "amr teach amk bole😒🥂": "[\"non\"]"
+    "amr teach amk bole😒🥂": "[\"non\"]",
+    "${encodeURIComponent(userInput)": "[\"non\"]"
 }
