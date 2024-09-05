@@ -8044,5 +8044,6 @@
     "??🙂": "[\"non\"]",
     "basi na 10 ta😏": "[\"non\"]",
     "aww.. so sweet. thank you .😘": "[\"non\"]",
-    "${encodeURIComponent(userInput)}": "[\"non\"]"
+    "${encodeURIComponent(userInput)}": "[\"non\"]",
+    "গোলাম": "[\"non\"]"
 }
