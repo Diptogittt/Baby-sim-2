@@ -8042,5 +8042,6 @@
     "${encodeURIComponent(userInput)": "[\"non\"]",
     "bar bar aki jinish dei ken": "[\"non\"]",
     "??🙂": "[\"non\"]",
-    "basi na 10 ta😏": "[\"non\"]"
+    "basi na 10 ta😏": "[\"non\"]",
+    "aww.. so sweet. thank you .😘": "[\"non\"]"
 }
