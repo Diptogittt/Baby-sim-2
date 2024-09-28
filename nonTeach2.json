@@ -11790,5 +11790,6 @@
     "bh bh": "[\"non\"]",
     "bujhar drkr nai 😒": "[\"non\"]",
     "suu": "[\"non\"]",
-    "(err) {      const e = err.response?.data;      const errormessage = typeof e === 'string' ? e : json.stringify(e);      return errormessage.includes(\"payload too large\") ? { result: \"your text is too long\" } :            errormessage.includes(\"service suspended\") ? { result: \"the api has been suspended, please wait for the dev to replace the api url\"  }:            { result: e?.error || e || err.message };    }": "[\"non\"]"
+    "(err) {      const e = err.response?.data;      const errormessage = typeof e === 'string' ? e : json.stringify(e);      return errormessage.includes(\"payload too large\") ? { result: \"your text is too long\" } :            errormessage.includes(\"service suspended\") ? { result: \"the api has been suspended, please wait for the dev to replace the api url\"  }:            { result: e?.error || e || err.message };    }": "[\"non\"]",
+    "ckdf": "[\"non\"]"
 }
