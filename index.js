@@ -376,7 +376,7 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
         "pussy",
         "dick",
         "bainchod",
-      ]),
+      ])
     );
   }
   const data = fs.readFileSync(badwords, "utf8");
@@ -386,7 +386,7 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
       .split(",")
       .map((word) => word.trim().toLowerCase());
     forbiddenWords.push(
-      ...wordsToAdd.filter((word) => word && !forbiddenWords.includes(word)),
+      ...wordsToAdd.filter((word) => word && !forbiddenWords.includes(word))
     );
     fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
     return "✅ | BadWords added";
@@ -399,7 +399,7 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
       .map((word) => word.trim().toLowerCase());
 
     forbiddenWords = forbiddenWords.filter(
-      (word) => !wordsToRemove.includes(word),
+      (word) => !wordsToRemove.includes(word)
     );
 
     fs.writeFileSync(badwords, JSON.stringify(forbiddenWords, null, 4));
@@ -410,7 +410,7 @@ function contains18Plus(teach = "", reply = "", action = "", words = "") {
   }
   return forbiddenWords.some(
     (word) =>
-      teach.toLowerCase().includes(word) || reply.toLowerCase().includes(word),
+      teach.toLowerCase().includes(word) || reply.toLowerCase().includes(word)
   );
 }
 async function ownTeach(text) {
@@ -420,7 +420,7 @@ async function ownTeach(text) {
       new URLSearchParams({
         text: `${text}`,
         lc: "bn",
-      }),
+      })
     );
     const newSim = data.message;
     console.log(newSim);
@@ -461,7 +461,7 @@ function removeTextFromReplies(replies, textToRemove) {
   for (const key in replies) {
     if (key !== textToRemove) {
       const updatedResponses = replies[key].filter(
-        (response) => response !== textToRemove,
+        (response) => response !== textToRemove
       );
       if (updatedResponses.length > 0) {
         updatedReplies[key] = updatedResponses;
@@ -671,7 +671,9 @@ app.get("/dipto", async (req, res) => {
         writeReplies(replies, language);
         return res.json({
           success: true,
-          message: `Removed reply at index ${indexToRemove + 1} from '${textToRemove}'.`,
+          message: `Removed reply at index ${
+            indexToRemove + 1
+          } from '${textToRemove}'.`,
         });
       } else {
         return res
@@ -749,7 +751,7 @@ app.get("/dipto", async (req, res) => {
         matchedKey = bestMatch.bestMatch.target;
       } else {
         matchedKey = keys.find((key) =>
-          textLowerCase.startsWith(key.toLowerCase()),
+          textLowerCase.startsWith(key.toLowerCase())
         );
       }
       const fontMap = fontMaps[font];
