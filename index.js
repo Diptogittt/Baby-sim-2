@@ -773,7 +773,8 @@ app.get("/dipto", async (req, res) => {
           const existingData = fs.readFileSync(nonTeach, "utf8");
           nonTeached = JSON.parse(existingData);
         } catch (readError) {
-          res.send("Error reading nonTeach file:", readError);
+          console.log(readError)
+          res.send("Error reading nonTeach file:");
         }
 
         nonTeached[text] = `["non"]`;
