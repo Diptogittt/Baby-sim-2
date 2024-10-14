@@ -1823,5 +1823,6 @@
     "/amimul on": "[\"non\"]",
     "/aminul ofd": "[\"non\"]",
     "/aminul off": "[\"non\"]",
-    "j": "[\"non\"]"
+    "j": "[\"non\"]",
+    "/cmd unload aminul": "[\"non\"]"
 }
