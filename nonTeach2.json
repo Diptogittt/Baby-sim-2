@@ -8578,5 +8578,6 @@
     "𝟱𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬𝟬 𝗯𝗮𝗿 𝗸𝗼𝗿𝗺𝘂😟": "[\"non\"]",
     "𝟭𝟬𝟬 𝗯𝗮𝗿 𝗸𝗼𝗿𝗺𝘂 🥳": "[\"non\"]",
     "besi khaite caile kom o pawa jay na": "[\"non\"]",
-    "ar jibon age thik chilo akhon or jibon andhokar": "[\"non\"]"
+    "ar jibon age thik chilo akhon or jibon andhokar": "[\"non\"]",
+    "📛 [ 27/10/2024 19:53:07 ]𝙰𝚗 𝙴𝚁𝚁𝙾𝚁 𝙾𝙲𝙲𝚄𝚁𝚁𝙴 𝚆𝙷𝙴𝙽 𝙴𝚇𝙴𝙲𝚄𝚃𝙸𝙽𝙶 𝙾𝙽𝚁𝙴𝙿𝙻𝚈 𝙰𝚃 𝙲𝙼𝙳\"bby\"typeerror: cannot read properties of undefined (reading 'messageid')    at /scripts/cmds/baby.js:59:43    at object.sendmessage (/fb-chat-api/src/sendmessage.js:380:11)    at object.module.exports.onreply (/scripts/cmds/baby.js:55:17)    at runmicrotasks (<anonymous>)": "[\"non\"]"
 }
