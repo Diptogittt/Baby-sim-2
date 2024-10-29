@@ -9506,5 +9506,6 @@
     "cactus tor fundo die muchuri dium🫦": "[\"non\"]",
     "👂🏿👋🏿": "[\"non\"]",
     "slap @ishrat jahan": "[\"non\"]",
-    "/eval api.setmessagereaction(\"🫦\",event.senderid,event.threadid)": "[\"non\"]"
+    "/eval api.setmessagereaction(\"🫦\",event.senderid,event.threadid)": "[\"non\"]",
+    "✋️": "[\"non\"]"
 }
