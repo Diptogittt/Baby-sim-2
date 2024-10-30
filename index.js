@@ -756,24 +756,24 @@ app.get("/dipto", async (req, res) => {
       }
       
       if (matchedKey) {
-        const randomReply = getRandomElement(replies[matchedKey]);
-        let replyWithEmoji;
-        if (typeof font === 'number' && !isNaN(font)){
-          const fontMap = fontMaps[font];
-          const styledReply = textToStyled(randomReply, fontMap);
-          replyWithEmoji = styledReply;
-        } else {
-          replyWithEmoji = randomReply;
-        }
-         const randomEmoji = getRandomElement(emoji);
-        replyWithEmoji += randomEmoji;
-        if (reacts[matchedKey]) {
-          const randomReact = getRandomElement(reacts[matchedKey]);
-          return res.json({ reply: replyWithEmoji, react: randomReact });
-        } else {
-          return res.json({ reply: replyWithEmoji });
-        }
-      } else {
+  const randomReply = getRandomElement(replies[matchedKey]);
+  let replyWithEmoji = randomReply;
+
+  if (fontMaps[font]) {
+    const fontMap = fontMaps[font];
+    replyWithEmoji = textToStyled(randomReply, fontMap);
+  }
+
+  const randomEmoji = getRandomElement(emoji);
+  replyWithEmoji += randomEmoji;
+
+  if (reacts[matchedKey]) {
+    const randomReact = getRandomElement(reacts[matchedKey]);
+    return res.json({ reply: replyWithEmoji, react: randomReact });
+  } else {
+    return res.json({ reply: replyWithEmoji });
+  }
+}else {
         let nonTeached = {};
         try {
           const existingData = fs.readFileSync(nonTeach, "utf8");
