@@ -11,7 +11,6 @@ let isGitOperationInProgress = false;
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/dipto.html");
 });
-
 app.use(express.json());
 const reactFilePath = __dirname + "/react.json";
 const newReplyFilePath = __dirname + "/simsimi.json";
