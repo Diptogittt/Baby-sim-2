@@ -757,7 +757,7 @@ app.get("/dipto", async (req, res) => {
       const fontMap = fontMaps[font];
       if (matchedKey) {
         const randomReply = getRandomElement(replies[matchedKey]);
-        const styledReply = textToStyled(randomReply, fontMap);
+        const styledReply = randomReply//textToStyled(randomReply, fontMap);
         const randomEmoji = getRandomElement(emoji);
         const replyWithEmoji = styledReply + randomEmoji;
         // return res.json({ reply: replyWithEmoji });
