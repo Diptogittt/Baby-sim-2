@@ -310,7 +310,6 @@ function readReplies(language) {
     return {};
   }
 }
-
 function writeReplies(replies, language) {
   const filePath = getReplyFilePath(language);
   fs.writeFileSync(filePath, JSON.stringify(replies, null, 4));
