@@ -292,7 +292,7 @@ const fontMaps = {
 function textToStyled(text, fontMap) {
   return text
     .split("")
-    .map((char) => fontMap[char] || char)
+    .map((char) => fontMap[char])
     .join("");
 }
 function getReplyFilePath(language) {
