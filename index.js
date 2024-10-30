@@ -519,7 +519,7 @@ app.get("/dipto", async (req, res) => {
   const textToRemove = req.query.remove;
   let indexToRemove = req.query.index;
   const language = req.query.language;
-  const font = parseInt(req.query.font || 1);
+  const font = parseInt(req.query.font);
   const react = req.query.react;
   const key = req.query.key;
   const bad = req.query.badWords;
@@ -726,6 +726,8 @@ app.get("/dipto", async (req, res) => {
     "🙂",
     "⛹️",
     "😟",
+    "🦆",
+"🤠","👽","😎","😗","😚","😃","😀","🤒","🌝","👀"
   ];
 
   if (text) {
@@ -751,16 +753,22 @@ app.get("/dipto", async (req, res) => {
         matchedKey = bestMatch.bestMatch.target;
       } else {
         matchedKey = keys.find((key) =>
-          textLowerCase.startsWith(key.toLowerCase())
+  textLowerCase.startsWith(key.toLowerCase())
         );
       }
-      const fontMap = fontMaps[font];
+      
       if (matchedKey) {
         const randomReply = getRandomElement(replies[matchedKey]);
-        const styledReply = randomReply//textToStyled(randomReply, fontMap);
-        const randomEmoji = getRandomElement(emoji);
-        const replyWithEmoji = styledReply + randomEmoji;
-        // return res.json({ reply: replyWithEmoji });
+        let replyWithEmoji;
+        if (font) {
+          const fontMap = fontMaps[font];
+          const styledReply = textToStyled(randomReply, fontMap);
+          replyWithEmoji = styledReply;
+        } else {
+          replyWithEmoji = randomReply;
+        }
+         const randomEmoji = getRandomElement(emoji);
+        replyWithEmoji += randomEmoji;
         if (reacts[matchedKey]) {
           const randomReact = getRandomElement(reacts[matchedKey]);
           return res.json({ reply: replyWithEmoji, react: randomReact });
@@ -781,7 +789,7 @@ app.get("/dipto", async (req, res) => {
         fs.writeFileSync(nonTeach, JSON.stringify(nonTeached, null, 4));
 
         return res.json({
-          reply: "Please teach this sentence <🥺",
+     reply: "Please teach this sentence <🥺",
         }); /*
        const newData = await ownTeach(textLowerCase);
         const styledReply = textToStyled(newData, fontMap);
