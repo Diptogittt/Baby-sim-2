@@ -759,7 +759,7 @@ app.get("/dipto", async (req, res) => {
       if (matchedKey) {
         const randomReply = getRandomElement(replies[matchedKey]);
         let replyWithEmoji;
-        if (font) {
+        if (typeof font === 'number' && !isNaN(font)){
           const fontMap = fontMaps[font];
           const styledReply = textToStyled(randomReply, fontMap);
           replyWithEmoji = styledReply;
