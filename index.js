@@ -581,6 +581,15 @@ app.get("/dipto", async (req, res) => {
         teachs: `null`,
       });
     }
+      if (replies[teachText] && replies[teachText].includes(reply)) {
+    return res.json({
+      message: "❌ | This reply has already been taught for this question. Please add a new reply.",
+      teacher: `${senderID}`,
+      teachs: `${teachText}`,
+    });
+  }
+
+    
     if (!replies[teachText]) {
       replies[teachText] = [];
     }
