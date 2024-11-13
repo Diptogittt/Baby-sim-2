@@ -731,7 +731,7 @@ app.get("/dipto", async (req, res) => {
   if (text) {
     try {
       let senderData = readSenders();
-      if (senderID && senderData[senderID]) {
+      if (senderID && senderData[senderID] && key) {
         return res.json({
           reply: "Tumi bolaso tomar name😒 " + senderData[senderID],
         });
