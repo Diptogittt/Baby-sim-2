@@ -744,7 +744,7 @@ app.get("/dipto", async (req, res) => {
         return res.json({
           reply: "Tumi bolaso tomar name😒 " + senderData[senderID],
         });
-      } else if (senderID && !senderData[senderID]) {
+      } else if (senderID && !senderData[senderID] && key) {
         return res.json({ reply: "Jani na .karon tumi tumar name bolo nai😒" });
       }
 
