@@ -507,7 +507,7 @@ function teacherName(number) {
 }
 app.get("/dipto", async (req, res) => {
 const { text, edit: editText, replace: replaceText, teach: teachText, reply, senderID, list: listText, removeAll: removeAllText, remove: textToRemove, index, language, font, react, key, badWords: bad, rmBadWords: bbad, listBadWords: bbaad, find } = req.query;
-const indexToRemove = parseInt(index);
+let indexToRemove = parseInt(index);
 //const font = font ? parseInt(font) : "";
   let replies = readReplies(language);
   let reacts = readReacts();
