@@ -507,24 +507,9 @@ function teacherName(number) {
   return numberData[number];
 }
 app.get("/dipto", async (req, res) => {
-  const text = req.query.text;
-  const editText = req.query.edit;
-  const replaceText = req.query.replace;
-  const teachText = req.query.teach;
-  const reply = req.query.reply;
-  const senderID = req.query.senderID;
-  const listText = req.query.list;
-  const removeAllText = req.query.removeAll;
-  const textToRemove = req.query.remove;
-  let indexToRemove = req.query.index;
-  const language = req.query.language;
-  const font = req.query.font ? parseInt(req.query.font) : "";
-  const react = req.query.react;
-  const key = req.query.key;
-  const bad = req.query.badWords;
-  const bbad = req.query.rmBadWords;
-  const bbaad = req.query.listBadWords;
-  const find = req.query.find;
+const { text, edit: editText, replace: replaceText, teach: teachText, reply, senderID, list: listText, removeAll: removeAllText, remove: textToRemove, index, language, font, react, key, badWords: bad, rmBadWords: bbad, listBadWords: bbaad, find } = req.query;
+const indexToRemove = parseInt(index);
+//const font = font ? parseInt(font) : "";
   let replies = readReplies(language);
   let reacts = readReacts();
   //try {
